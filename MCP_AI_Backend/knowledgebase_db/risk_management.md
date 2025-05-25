@@ -1,0 +1,11 @@
+## 4. Risk Management
+- **Position Sizing**
+  - Kelly Criterion, Value-at-Risk (VaR), risk parity
+- **Stop Loss / Take Profit**
+  - Dynamic thresholds based on volatility or model confidence
+- **Drawdown Limits**
+  - Strategy suspension after max drawdown
+- **Exposure Management**
+  - Max capital allocation per asset or sector
+- **Slippage & Spread Modeling**
+  - Simulating realistic fills

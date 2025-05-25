@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Chunked Response Example</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        #controls {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        #response {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            min-height: 200px;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .chunk {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-left: 4px solid #3498db;
+            background-color: #f8f9fa;
+            border-radius: 0 4px 4px 0;
+        }
+        .chunk-header {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .chunk-data {
+            font-family: monospace;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+        .progress-container {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .progress-bar {
+            height: 20px;
+            background-color: #3498db;
+            border-radius: 4px;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        button:disabled {
+            background-color: #95a5a6;
+            cursor: not-allowed;
+        }
+        .error {
+            color: #e74c3c;
+            padding: 10px;
+            background-color: #fadbd8;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #eaf2f8;
+            border-radius: 4px;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-value {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .stat-label {
+            font-size: 12px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advanced Chunked Response Processor</h1>
+    
+    <div id="controls">
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        
+        <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+            <button id="startBtn">Start Processing</button>
+            <button id="cancelBtn" disabled>Cancel Request</button>
+            <button id="clearBtn">Clear Results</button>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-value" id="chunkCount">0</div>
+                <div class="stat-label">Chunks Received</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="dataSize">0 B</div>
+                <div class="stat-label">Data Received</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="timeElapsed">0s</div>
+                <div class="stat-label">Time Elapsed</div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="response"></div>
+
+    <script>
+        // Global variables to track request state
+        let controller = null;
+        let startTime = null;
+        let totalBytesReceived = 0;
+        let chunkCounter = 0;
+        let updateInterval = null;
+        
+        // DOM elements
+        const startBtn = document.getElementById('startBtn');
+        const cancelBtn = document.getElementById('cancelBtn');
+        const clearBtn = document.getElementById('clearBtn');
+        const responseDiv = document.getElementById('response');
+        const progressBar = document.getElementById('progressBar');
+        const chunkCountEl = document.getElementById('chunkCount');
+        const dataSizeEl = document.getElementById('dataSize');
+        const timeElapsedEl = document.getElementById('timeElapsed');
+        
+        // Format bytes to human-readable string
+        function formatBytes(bytes, decimals = 2) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const dm = decimals < 0 ? 0 : decimals;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(dm) + ' ' + sizes[i]);
+        }
+        
+        // Update statistics display
+        function updateStats() {
+            const now = new Date();
+            const elapsedSeconds = ((now - startTime) / 1000).toFixed(1);
+            timeElapsedEl.textContent = `${elapsedSeconds}s`;
+            chunkCountEl.textContent = chunkCounter;
+            dataSizeEl.textContent = formatBytes(totalBytesReceived);
+        }
+        
+        // Start processing chunks from the server
+        async function processChunkedResponse() {
+            try {
+                // Reset state
+                controller = new AbortController();
+                startTime = new Date();
+                totalBytesReceived = 0;
+                chunkCounter = 0;
+                responseDiv.innerHTML = '';
+                progressBar.style.width = '0%';
+                
+                // Update UI
+                startBtn.disabled = true;
+                cancelBtn.disabled = false;
+                
+                // Start stats update interval
+                updateInterval = setInterval(updateStats, 100);
+                
+                // Make a POST request to the server with abort signal
+                const response = await fetch('http://127.0.0.1:5000/process', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-Requested-With': 'XMLHttpRequest'
+                    },
+                    signal: controller.signal
+                });
+                
+                // Check if response is chunked
+                if (!response.ok) {
+                    throw new Error(`Server returned ${response.status}: ${response.statusText}`);
+                }
+                
+                if (!response.body) {
+                    throw new Error('ReadableStream not supported in this browser');
+                }
+                
+                // Stream the response in chunks
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                let done = false;
+                
+                while (!done) {
+                    const { value, done: readerDone } = await reader.read();
+                    done = readerDone;
+                    
+                    if (value) {
+                        const chunk = decoder.decode(value, { stream: true });
+                        totalBytesReceived += chunk.length;
+                        chunkCounter++;
+                        
+                        // Update progress (simulated since we don't know total size)
+                        const progress = Math.min(100, (chunkCounter / 50) * 100);
+                        progressBar.style.width = `${progress}%`;
+                        
+                        // Process the chunk
+                        displayChunk(chunk);
+                    }
+                }
+                
+                // Complete the progress bar when done
+                progressBar.style.width = '100%';
+                progressBar.style.backgroundColor = '#2ecc71';
+                
+                // Display completion message
+                const completionTime = ((new Date() - startTime) / 1000).toFixed(2);
+                responseDiv.innerHTML += `
+                    <div class="chunk" style="border-left-color: #2ecc71;">
+                        <div class="chunk-header">✅ Processing Complete</div>
+                        <div class="chunk-data">
+                            Received ${chunkCounter} chunks (${formatBytes(totalBytesReceived)}) in ${completionTime} seconds
+                        </div>
+                    </div>
+                `;
+                
+            } catch (error) {
+                if (error.name === 'AbortError') {
+                    responseDiv.innerHTML += `
+                        <div class="chunk" style="border-left-color: #e74c3c;">
+                            <div class="chunk-header">⏹️ Request Cancelled</div>
+                            <div class="chunk-data">
+                                Process was manually cancelled after receiving ${chunkCounter} chunks
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    responseDiv.innerHTML += `
+                        <div class="error">
+                            <strong>Error:</strong> ${error.message}
+                        </div>
+                    `;
+                    console.error('Error processing chunks:', error);
+                }
+                
+                progressBar.style.backgroundColor = '#e74c3c';
+            } finally {
+                // Clean up
+                startBtn.disabled = false;
+                cancelBtn.disabled = true;
+                clearInterval(updateInterval);
+                updateStats();
+            }
+        }
+        
+        // Display a single chunk with timestamp and metadata
+        function displayChunk(chunk) {
+            const now = new Date();
+            const timestamp = now.toISOString().split('T')[1].split('.')[0];
+            const chunkSize = formatBytes(chunk.length);
+            
+            // Try to parse JSON if possible
+            let parsedData = chunk;
+            try {
+                parsedData = JSON.parse(chunk);
+                parsedData = JSON.stringify(parsedData, null, 2);
+            } catch (e) {
+                // Not JSON, use as-is
+            }
+            
+            responseDiv.innerHTML += `
+                <div class="chunk">
+                    <div class="chunk-header">
+                        Chunk #${chunkCounter} (${chunkSize}) at ${timestamp}
+                    </div>
+                    <div class="chunk-data">${parsedData}</div>
+                </div>
+            `;
+            
+            // Auto-scroll to bottom
+            responseDiv.scrollTop = responseDiv.scrollHeight;
+        }
+        
+        // Event listeners
+        startBtn.addEventListener('click', processChunkedResponse);
+        
+        cancelBtn.addEventListener('click', () => {
+            if (controller) {
+                controller.abort();
+            }
+        });
+        
+        clearBtn.addEventListener('click', () => {
+            responseDiv.innerHTML = '';
+            chunkCounter = 0;
+            totalBytesReceived = 0;
+            progressBar.style.width = '0%';
+            progressBar.style.backgroundColor = '#3498db';
+            chunkCountEl.textContent = '0';
+            dataSizeEl.textContent = '0 B';
+            timeElapsedEl.textContent = '0s';
+        });
+        
+        // Initialize stats display
+        updateStats();
+    </script>
+</body>
+</html>

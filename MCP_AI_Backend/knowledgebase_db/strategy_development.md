@@ -1,0 +1,11 @@
+## 3. Strategy Development
+- **Types**
+  - Trend following
+  - Mean reversion
+  - Arbitrage (statistical, triangular, latency)
+  - Market making
+  - Momentum
+- **Rule-Based vs ML-Based**
+  - Heuristic rules vs learned policies
+- **Timeframes**
+  - Scalping, intraday, swing, long-term

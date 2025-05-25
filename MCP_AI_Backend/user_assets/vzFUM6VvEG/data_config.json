@@ -1,0 +1,57 @@
+{
+    "workflowId": "workflow-1747406842268",
+    "name": "tryyy",
+    "description": "Automated trading workflow for SUI tokens",
+    "nodes": [
+        {
+            "id": "startNode-1747406801021",
+            "type": "startNode",
+            "position": {
+                "x": 165,
+                "y": 195
+            },
+            "data": {}
+        },
+        {
+            "id": "agentNode-1747406804590",
+            "type": "agentNode",
+            "position": {
+                "x": 465,
+                "y": 180
+            },
+            "data": {
+                "name": "My sol agent",
+                "description": "Follow the strategy"
+            }
+        },
+        {
+            "id": "strategyNode-1747406809774",
+            "type": "strategyNode",
+            "position": {
+                "x": 285,
+                "y": 420
+            },
+            "data": {
+                "strategyText": "Do random buy,sell,hold"
+            }
+        }
+    ],
+    "edges": [
+        {
+            "id": "reactflow__edge-startNode-1747406801021start-out-agentNode-1747406804590agent-in",
+            "source": "startNode-1747406801021",
+            "target": "agentNode-1747406804590",
+            "type": "smoothstep",
+            "sourceHandle": "start-out",
+            "targetHandle": "agent-in"
+        },
+        {
+            "id": "reactflow__edge-agentNode-1747406804590model-out-strategyNode-1747406809774strategy-in",
+            "source": "agentNode-1747406804590",
+            "target": "strategyNode-1747406809774",
+            "type": "smoothstep",
+            "sourceHandle": "model-out",
+            "targetHandle": "strategy-in"
+        }
+    ]
+}

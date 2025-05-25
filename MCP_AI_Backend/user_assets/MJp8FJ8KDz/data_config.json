@@ -1,0 +1,110 @@
+{
+    "workflowId": "workflow-1747922446250",
+    "name": "SUI OVERFLOW",
+    "description": "Automated trading workflow for SUI tokens",
+    "nodes": [
+        {
+            "id": "startNode-1747922362114",
+            "type": "startNode",
+            "position": {
+                "x": -90,
+                "y": 165
+            },
+            "data": {}
+        },
+        {
+            "id": "agentNode-1747922366087",
+            "type": "agentNode",
+            "position": {
+                "x": 270,
+                "y": 135
+            },
+            "data": {
+                "name": "SUI USDC AGENT",
+                "description": "Follow the givemn startegy"
+            }
+        },
+        {
+            "id": "modelNode-1747922371889",
+            "type": "modelNode",
+            "position": {
+                "x": 0,
+                "y": 345
+            },
+            "data": {
+                "model": "Groq"
+            }
+        },
+        {
+            "id": "strategyNode-1747922380559",
+            "type": "strategyNode",
+            "position": {
+                "x": 465,
+                "y": 465
+            },
+            "data": {
+                "strategyText": "Buy,sell,hold do randomly but i need profit"
+            }
+        },
+        {
+            "id": "telegramNode-1747922413611",
+            "type": "telegramNode",
+            "position": {
+                "x": 1155,
+                "y": 255
+            },
+            "data": {}
+        },
+        {
+            "id": "notificationNode-1747922418162",
+            "type": "notificationNode",
+            "position": {
+                "x": 795,
+                "y": 210
+            },
+            "data": {}
+        }
+    ],
+    "edges": [
+        {
+            "id": "reactflow__edge-startNode-1747922362114start-out-agentNode-1747922366087agent-in",
+            "source": "startNode-1747922362114",
+            "target": "agentNode-1747922366087",
+            "type": "smoothstep",
+            "sourceHandle": "start-out",
+            "targetHandle": "agent-in"
+        },
+        {
+            "id": "reactflow__edge-agentNode-1747922366087model-out-modelNode-1747922371889model-in",
+            "source": "agentNode-1747922366087",
+            "target": "modelNode-1747922371889",
+            "type": "smoothstep",
+            "sourceHandle": "model-out",
+            "targetHandle": "model-in"
+        },
+        {
+            "id": "reactflow__edge-agentNode-1747922366087memory-out-strategyNode-1747922380559strategy-in",
+            "source": "agentNode-1747922366087",
+            "target": "strategyNode-1747922380559",
+            "type": "smoothstep",
+            "sourceHandle": "memory-out",
+            "targetHandle": "strategy-in"
+        },
+        {
+            "id": "reactflow__edge-agentNode-1747922366087agent-out-notificationNode-1747922418162notification-in",
+            "source": "agentNode-1747922366087",
+            "target": "notificationNode-1747922418162",
+            "type": "smoothstep",
+            "sourceHandle": "agent-out",
+            "targetHandle": "notification-in"
+        },
+        {
+            "id": "reactflow__edge-notificationNode-1747922418162notification-out-telegramNode-1747922413611telegram-in",
+            "source": "notificationNode-1747922418162",
+            "target": "telegramNode-1747922413611",
+            "type": "smoothstep",
+            "sourceHandle": "notification-out",
+            "targetHandle": "telegram-in"
+        }
+    ]
+}

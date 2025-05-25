@@ -1,0 +1,126 @@
+{
+    "workflowId": "trading-workflow-1",
+    "name": "SUI Trading Agent Workflow",
+    "description": "Automated trading workflow for SUI tokens",
+    "nodes": [
+        {
+            "id": "s638",
+            "type": "startNode",
+            "position": {
+                "x": 182,
+                "y": 357
+            },
+            "data": {}
+        },
+        {
+            "id": "a174",
+            "type": "agentNode",
+            "position": {
+                "x": 486,
+                "y": 323
+            },
+            "data": {
+                "name": "Basic Traing Agent",
+                "description": "This agent can only give u calls, but cannot perform transactions"
+            }
+        },
+        {
+            "id": "strategy",
+            "type": "strategyNode",
+            "position": {
+                "x": 564,
+                "y": 93
+            },
+            "data": {
+                "strategyText": "Make random decision of buy sell and hold"
+            }
+        },
+        {
+            "id": "m197",
+            "type": "modelNode",
+            "position": {
+                "x": 215,
+                "y": 595
+            },
+            "data": {
+                "model": "gpt4",
+                "parentId": "a174"
+            }
+        },
+        {
+            "id": "memory",
+            "type": "memoryNode",
+            "position": {
+                "x": 682,
+                "y": 681
+            },
+            "data": {
+                "memoryType": "postgres",
+                "parentId": "a174"
+            }
+        },
+        {
+            "id": "notification",
+            "type": "notificationNode",
+            "position": {
+                "x": 1240,
+                "y": 358
+            },
+            "data": {
+                "message": "Enter notification message"
+            }
+        }
+    ],
+    "edges": [
+        {
+            "id": "e-s638-a174",
+            "source": "s638",
+            "sourceHandle": "start-out",
+            "target": "a174",
+            "targetHandle": "agent-in",
+            "type": "smoothstep"
+        },
+        {
+            "id": "e-a174-m197",
+            "source": "a174",
+            "sourceHandle": "model-connect",
+            "target": "m197",
+            "targetHandle": "model-in",
+            "type": "smoothstep",
+            "style": {
+                "strokeWidth": 2,
+                "stroke": "#5e72e4",
+                "strokeDasharray": "5,5"
+            }
+        },
+        {
+            "id": "e-a174-memory",
+            "source": "a174",
+            "sourceHandle": "memory-connect",
+            "target": "memory",
+            "targetHandle": "memory-in",
+            "type": "smoothstep",
+            "style": {
+                "strokeWidth": 2,
+                "stroke": "#5e72e4",
+                "strokeDasharray": "5,5"
+            }
+        },
+        {
+            "id": "e-a174-notification",
+            "source": "a174",
+            "sourceHandle": "agent-out",
+            "target": "notification",
+            "targetHandle": "notification-in",
+            "type": "smoothstep"
+        },
+        {
+            "id": "e-s638-strategy",
+            "source": "s638",
+            "sourceHandle": "start-out",
+            "target": "strategy",
+            "targetHandle": "strategy-in",
+            "type": "smoothstep"
+        }
+    ]
+}

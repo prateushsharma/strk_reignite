@@ -1,0 +1,11 @@
+## 1. Data Acquisition & Processing
+- **Market Data**
+  - Price, volume, order book (Level 1 & 2), trades, bid-ask spread
+- **Alternative Data**
+  - News sentiment, social media, macroeconomic indicators, weather
+- **Historical Data**
+  - Essential for backtesting strategies
+- **Real-time Streaming**
+  - Low-latency data feeds for live trading
+- **Data Cleaning & Normalization**
+  - Handling missing data, outliers, timestamp alignment

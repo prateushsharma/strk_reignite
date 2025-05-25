@@ -1,0 +1,57 @@
+{
+    "workflowId": "workflow-1747866844361",
+    "name": "fffdsd",
+    "description": "Automated trading workflow for SUI tokens",
+    "nodes": [
+        {
+            "id": "startNode-1747866815638",
+            "type": "startNode",
+            "position": {
+                "x": -45,
+                "y": 120
+            },
+            "data": {}
+        },
+        {
+            "id": "agentNode-1747866818319",
+            "type": "agentNode",
+            "position": {
+                "x": 300,
+                "y": 0
+            },
+            "data": {
+                "name": "sds",
+                "description": "follow the strategy"
+            }
+        },
+        {
+            "id": "strategyNode-1747866828333",
+            "type": "strategyNode",
+            "position": {
+                "x": 30,
+                "y": 300
+            },
+            "data": {
+                "strategyText": "random buy,sell hold"
+            }
+        }
+    ],
+    "edges": [
+        {
+            "id": "reactflow__edge-startNode-1747866815638start-out-agentNode-1747866818319agent-in",
+            "source": "startNode-1747866815638",
+            "target": "agentNode-1747866818319",
+            "type": "smoothstep",
+            "sourceHandle": "start-out",
+            "targetHandle": "agent-in"
+        },
+        {
+            "id": "reactflow__edge-agentNode-1747866818319model-out-strategyNode-1747866828333strategy-in",
+            "source": "agentNode-1747866818319",
+            "target": "strategyNode-1747866828333",
+            "type": "smoothstep",
+            "sourceHandle": "model-out",
+            "targetHandle": "strategy-in"
+        }
+    ]
+}

@@ -1,0 +1,93 @@
+{
+    "workflowId": "workflow-1747071842885",
+    "name": "My test agent",
+    "description": "Automated trading workflow for SUI tokens",
+    "nodes": [
+        {
+            "id": "startNode-1747071776666",
+            "type": "startNode",
+            "position": {
+                "x": 15,
+                "y": 195
+            },
+            "data": {}
+        },
+        {
+            "id": "agentNode-1747071779830",
+            "type": "agentNode",
+            "position": {
+                "x": 315,
+                "y": 150
+            },
+            "data": {
+                "name": "My testing agent",
+                "description": "See the strategy and do accordingly"
+            }
+        },
+        {
+            "id": "modelNode-1747071790087",
+            "type": "modelNode",
+            "position": {
+                "x": -15,
+                "y": 705
+            },
+            "data": {
+                "model": "gpt4"
+            }
+        },
+        {
+            "id": "strategyNode-1747071797697",
+            "type": "strategyNode",
+            "position": {
+                "x": 450,
+                "y": 675
+            },
+            "data": {
+                "strategyText": "Just hold, neither buy nor swap pls"
+            }
+        },
+        {
+            "id": "notificationNode-1747071831626",
+            "type": "notificationNode",
+            "position": {
+                "x": 1125,
+                "y": 165
+            },
+            "data": {}
+        }
+    ],
+    "edges": [
+        {
+            "id": "reactflow__edge-startNode-1747071776666start-out-agentNode-1747071779830agent-in",
+            "source": "startNode-1747071776666",
+            "target": "agentNode-1747071779830",
+            "type": "smoothstep",
+            "sourceHandle": "start-out",
+            "targetHandle": "agent-in"
+        },
+        {
+            "id": "reactflow__edge-agentNode-1747071779830model-out-modelNode-1747071790087model-in",
+            "source": "agentNode-1747071779830",
+            "target": "modelNode-1747071790087",
+            "type": "smoothstep",
+            "sourceHandle": "model-out",
+            "targetHandle": "model-in"
+        },
+        {
+            "id": "reactflow__edge-agentNode-1747071779830memory-out-strategyNode-1747071797697strategy-in",
+            "source": "agentNode-1747071779830",
+            "target": "strategyNode-1747071797697",
+            "type": "smoothstep",
+            "sourceHandle": "memory-out",
+            "targetHandle": "strategy-in"
+        },
+        {
+            "id": "reactflow__edge-agentNode-1747071779830agent-out-notificationNode-1747071831626notification-in",
+            "source": "agentNode-1747071779830",
+            "target": "notificationNode-1747071831626",
+            "type": "smoothstep",
+            "sourceHandle": "agent-out",
+            "targetHandle": "notification-in"
+        }
+    ]
+}

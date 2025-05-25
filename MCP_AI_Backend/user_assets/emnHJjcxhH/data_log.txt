@@ -1,0 +1,594 @@
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (0.0005) insufficient, volume (6823.50) below average (17927.86), or RSI (50.74) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:50:57
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (0.0003) insufficient, volume (0.00) below average (17518.90), or RSI (47.65) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:51:03
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (0.0003) insufficient, volume (0.00) below average (17518.90), or RSI (47.65) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:51:08
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (0.0003) insufficient, volume (14.20) below average (17519.19), or RSI (46.06) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:51:13
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (0.0003) insufficient, volume (14.20) below average (17519.19), or RSI (46.06) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:51:19
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (0.0003) insufficient, volume (14.20) below average (17519.19), or RSI (46.06) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:51:24
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (0.0003) insufficient, volume (40.20) below average (17519.71), or RSI (45.51) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:51:29
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (0.0003) insufficient, volume (116.30) below average (17521.23), or RSI (45.51) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:51:35
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (0.0003) insufficient, volume (116.30) below average (17521.23), or RSI (45.51) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:51:40
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (0.0003) insufficient, volume (1102.20) below average (17540.95), or RSI (44.44) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:51:46
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (0.0003) insufficient, volume (1112.80) below average (17541.16), or RSI (44.19) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:51:51
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (0.0003) insufficient, volume (1672.40) below average (17552.35), or RSI (42.11) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:51:57
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (0.0000) insufficient, volume (108.90) below average (17029.82), or RSI (33.43) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:52:02
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (0.0000) insufficient, volume (208.90) below average (17031.82), or RSI (33.33) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:52:07
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (0.0000) insufficient, volume (236.60) below average (17032.37), or RSI (32.95) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:52:13
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (0.0000) insufficient, volume (394.80) below average (17035.54), or RSI (32.03) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:52:18
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (0.0000) insufficient, volume (1489.60) below average (17057.43), or RSI (31.34) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:52:24
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (0.0000) insufficient, volume (2146.60) below average (17070.57), or RSI (31.42) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:52:29
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (0.0000) insufficient, volume (2287.40) below average (17073.39), or RSI (31.08) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:52:34
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0000) insufficient, volume (2930.60) below average (17086.25), or RSI (30.50) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:52:40
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0000) insufficient, volume (3087.20) below average (17089.38), or RSI (30.03) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:52:45
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0000) insufficient, volume (3943.90) below average (17106.52), or RSI (29.79) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:52:51
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0000) insufficient, volume (3949.10) below average (17106.62), or RSI (29.56) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:52:56
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0004) insufficient, volume (105.70) below average (16539.67), or RSI (30.26) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:53:02
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0004) insufficient, volume (567.50) below average (16548.91), or RSI (29.64) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:53:07
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0004) insufficient, volume (1007.10) below average (16557.70), or RSI (29.41) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:53:13
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0004) insufficient, volume (1104.60) below average (16559.65), or RSI (29.64) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:53:18
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0004) insufficient, volume (1104.60) below average (16559.65), or RSI (29.64) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:53:23
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0004) insufficient, volume (1433.70) below average (16566.23), or RSI (29.41) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:53:29
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0004) insufficient, volume (1684.60) below average (16571.25), or RSI (29.19) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:53:34
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0004) insufficient, volume (1754.30) below average (16572.64), or RSI (29.19) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:53:40
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0004) insufficient, volume (3408.60) below average (16605.73), or RSI (29.72) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:53:45
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0004) insufficient, volume (3474.20) below average (16607.04), or RSI (30.18) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:53:51
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0004) insufficient, volume (3480.80) below average (16607.17), or RSI (30.26) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:53:56
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0006) insufficient, volume (0.00) below average (16282.23), or RSI (34.18) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:54:01
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0006) insufficient, volume (289.20) below average (16288.01), or RSI (35.81) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:54:07
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0006) insufficient, volume (626.60) below average (16294.76), or RSI (38.03) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:54:12
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0006) insufficient, volume (740.40) below average (16297.03), or RSI (37.53) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:54:18
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0006) insufficient, volume (980.00) below average (16301.83), or RSI (37.53) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:54:23
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0006) insufficient, volume (1380.00) below average (16309.83), or RSI (38.52) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:54:28
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0006) insufficient, volume (1653.10) below average (16315.29), or RSI (38.36) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:54:34
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0006) insufficient, volume (1654.70) below average (16315.32), or RSI (37.70) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:54:39
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0006) insufficient, volume (1728.80) below average (16316.80), or RSI (37.20) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:54:45
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0006) insufficient, volume (1730.40) below average (16316.83), or RSI (36.86) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:54:50
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0006) insufficient, volume (1740.50) below average (16317.04), or RSI (36.34) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:54:55
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0006) insufficient, volume (1740.50) below average (16317.04), or RSI (36.34) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:55:01
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (2340.30) below average (16162.00), or RSI (30.24) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:55:06
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (3017.50) below average (16175.55), or RSI (30.24) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:55:12
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (3017.50) below average (16175.55), or RSI (30.24) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:55:17
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (3474.80) below average (16184.69), or RSI (29.61) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:55:22
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (3486.50) below average (16184.93), or RSI (26.96) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:55:28
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (4154.30) below average (16198.28), or RSI (30.45) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:55:33
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (4166.40) below average (16198.53), or RSI (31.87) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:55:39
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (4413.80) below average (16203.47), or RSI (33.81) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:55:44
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (4415.40) below average (16203.51), or RSI (35.46) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:55:49
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (4415.40) below average (16203.51), or RSI (35.46) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:55:55
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (4424.30) below average (16203.68), or RSI (35.64) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:56:00
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (760.90) below average (16023.29), or RSI (34.05) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:56:06
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (785.40) below average (16023.78), or RSI (32.48) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:56:11
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (939.80) below average (16026.87), or RSI (32.65) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:56:17
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (939.80) below average (16026.87), or RSI (32.65) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:56:22
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (939.80) below average (16026.87), or RSI (32.65) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:56:27
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (1563.20) below average (16039.34), or RSI (33.25) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:56:33
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (1563.20) below average (16039.34), or RSI (33.25) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:56:38
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (1563.20) below average (16039.34), or RSI (33.25) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:56:44
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (2314.20) below average (16054.36), or RSI (32.82) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:56:49
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (2412.30) below average (16056.32), or RSI (32.65) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:56:55
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0007) insufficient, volume (2462.70) below average (16057.33), or RSI (32.65) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:57:00
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (106.90) below average (15824.61), or RSI (35.67) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:57:06
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (106.90) below average (15824.61), or RSI (35.67) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:57:11
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (106.90) below average (15824.61), or RSI (35.67) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:57:17
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (106.90) below average (15824.61), or RSI (35.67) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:57:22
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (308.60) below average (15828.65), or RSI (34.70) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:57:27
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (606.80) below average (15834.61), or RSI (33.78) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:57:33
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (606.80) below average (15834.61), or RSI (33.78) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:57:38
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (619.50) below average (15834.87), or RSI (33.16) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:57:44
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (619.50) below average (15834.87), or RSI (33.16) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:57:49
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (622.90) below average (15834.93), or RSI (32.90) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:57:55
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (631.10) below average (15835.10), or RSI (32.56) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:58:00
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0009) insufficient, volume (101.60) below average (15612.01), or RSI (35.88) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:58:05
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (675.10) below average (15623.48), or RSI (37.67) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:58:11
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (686.60) below average (15623.71), or RSI (39.19) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:58:16
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (770.60) below average (15625.39), or RSI (41.41) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:58:21
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (770.60) below average (15625.39), or RSI (41.41) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:58:27
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (17941.40) below average (15968.80), or RSI (41.41) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:58:32
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (17941.40) below average (15968.80), or RSI (41.41) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:58:38
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (17941.40) below average (15968.80), or RSI (41.41) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:58:43
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (17941.40) below average (15968.80), or RSI (41.41) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:58:49
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (17941.40) below average (15968.80), or RSI (41.41) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:58:54
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (17950.10) below average (15968.98), or RSI (40.94) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:59:00
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (10.00) below average (15812.27), or RSI (37.40) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:59:05
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (203.80) below average (15816.15), or RSI (36.10) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:59:11
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (606.40) below average (15824.20), or RSI (34.09) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:59:16
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (3406.00) below average (15880.19), or RSI (33.83) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:59:21
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0008) insufficient, volume (3706.00) below average (15886.19), or RSI (33.58) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:59:27
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0009) insufficient, volume (17365.90) below average (16159.39), or RSI (32.45) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:59:32
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0009) insufficient, volume (19482.70) below average (16201.73), or RSI (30.75) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:59:37
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0009) insufficient, volume (23149.40) below average (16275.06), or RSI (30.27) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:59:43
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'LOW' intercepted decision 'SELL' → revised to 'HOLD'. Reason: Trend slope (-0.0009) insufficient, volume (26586.10) below average (16343.79), or RSI (30.00) below threshold.
+[FINAL DECISION] HOLD at 2025-05-22 02:59:48
+====================================================================================================
+

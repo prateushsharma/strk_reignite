@@ -1,0 +1,1305 @@
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:03:46
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:03:52
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:03:57
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0002).
+[FINAL DECISION] HOLD at 2025-05-22 02:04:03
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (44.44) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:04:08
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0001).
+[FINAL DECISION] HOLD at 2025-05-22 02:04:13
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0001).
+[FINAL DECISION] HOLD at 2025-05-22 02:04:19
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0001).
+[FINAL DECISION] HOLD at 2025-05-22 02:04:24
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:04:30
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0002).
+[FINAL DECISION] HOLD at 2025-05-22 02:04:35
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (43.80) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:04:41
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:04:46
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:04:51
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:04:57
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Decision 'SELL' passed with risk profile 'MED'. No action taken.
+[DECISION] Liquidity already acquired, updating decision to 'hold'
+[FINAL DECISION] HOLD at 2025-05-22 02:05:02
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:05:07
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:05:13
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Decision 'SELL' passed with risk profile 'MED'. No action taken.
+[DECISION] Liquidity already acquired, updating decision to 'hold'
+[FINAL DECISION] HOLD at 2025-05-22 02:05:18
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:05:23
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:05:29
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:05:34
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:05:40
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:05:45
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0002).
+[FINAL DECISION] HOLD at 2025-05-22 02:05:50
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:05:56
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:06:01
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:06:07
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0002).
+[FINAL DECISION] HOLD at 2025-05-22 02:06:12
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:06:18
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:06:23
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0002).
+[FINAL DECISION] HOLD at 2025-05-22 02:06:28
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (47.87) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:06:34
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:06:39
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0002).
+[FINAL DECISION] HOLD at 2025-05-22 02:06:45
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (46.35) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:06:50
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:06:55
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:07:01
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (42.18) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:07:06
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0002).
+[FINAL DECISION] HOLD at 2025-05-22 02:07:12
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0002).
+[FINAL DECISION] HOLD at 2025-05-22 02:07:17
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:07:23
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (46.43) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:07:28
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (46.77) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:07:33
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:07:39
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (48.60) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:07:44
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:07:50
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:07:55
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0002).
+[FINAL DECISION] HOLD at 2025-05-22 02:08:01
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Decision 'SELL' passed with risk profile 'MED'. No action taken.
+[DECISION] Liquidity already acquired, updating decision to 'hold'
+[FINAL DECISION] HOLD at 2025-05-22 02:08:06
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (48.24) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:08:12
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0002).
+[FINAL DECISION] HOLD at 2025-05-22 02:08:18
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Decision 'SELL' passed with risk profile 'MED'. No action taken.
+[DECISION] Liquidity already acquired, updating decision to 'hold'
+[FINAL DECISION] HOLD at 2025-05-22 02:08:23
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0002).
+[FINAL DECISION] HOLD at 2025-05-22 02:08:29
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0002).
+[FINAL DECISION] HOLD at 2025-05-22 02:08:34
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:08:40
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0002).
+[FINAL DECISION] HOLD at 2025-05-22 02:08:45
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0002).
+[FINAL DECISION] HOLD at 2025-05-22 02:08:51
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:08:56
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0001).
+[FINAL DECISION] HOLD at 2025-05-22 02:09:02
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:09:07
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (45.16) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:09:12
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:09:18
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (46.94) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:09:23
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:09:29
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (44.98) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:09:34
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:09:40
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:09:45
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:09:50
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:09:56
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:10:01
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:10:07
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (45.31) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:10:12
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:10:17
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0000).
+[FINAL DECISION] HOLD at 2025-05-22 02:10:23
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (43.93) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:10:28
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:10:34
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:10:39
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0000).
+[FINAL DECISION] HOLD at 2025-05-22 02:10:45
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:10:50
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:10:55
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Decision 'SELL' passed with risk profile 'MED'. No action taken.
+[DECISION] Liquidity already acquired, updating decision to 'hold'
+[FINAL DECISION] HOLD at 2025-05-22 02:11:01
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:11:06
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:11:12
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Decision 'SELL' passed with risk profile 'MED'. No action taken.
+[DECISION] Liquidity already acquired, updating decision to 'hold'
+[FINAL DECISION] HOLD at 2025-05-22 02:11:17
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:11:23
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:11:28
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:11:34
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0000).
+[FINAL DECISION] HOLD at 2025-05-22 02:11:39
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0000).
+[FINAL DECISION] HOLD at 2025-05-22 02:11:44
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:11:50
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0000).
+[FINAL DECISION] HOLD at 2025-05-22 02:11:55
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:12:01
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:12:06
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0000).
+[FINAL DECISION] HOLD at 2025-05-22 02:12:12
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:12:17
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:12:22
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0000).
+[FINAL DECISION] HOLD at 2025-05-22 02:12:28
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0000).
+[FINAL DECISION] HOLD at 2025-05-22 02:12:33
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:12:39
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:12:44
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (47.79) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:12:49
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:12:55
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (47.79) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:13:00
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:13:05
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (41.42) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:13:11
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0001).
+[FINAL DECISION] HOLD at 2025-05-22 02:13:17
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:13:22
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:13:27
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:13:33
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (42.13) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:13:38
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:13:44
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (43.72) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:13:49
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0001).
+[FINAL DECISION] HOLD at 2025-05-22 02:13:54
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:14:00
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (41.77) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:14:05
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0002).
+[FINAL DECISION] HOLD at 2025-05-22 02:14:11
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0002).
+[FINAL DECISION] HOLD at 2025-05-22 02:14:16
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:14:21
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:14:27
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:14:32
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:14:38
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0002).
+[FINAL DECISION] HOLD at 2025-05-22 02:14:43
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:14:48
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (45.56) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:14:54
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:14:59
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (25.12) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:15:05
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:15:10
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:15:15
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0003).
+[FINAL DECISION] HOLD at 2025-05-22 02:15:21
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:15:27
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (20.69) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:15:32
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:15:37
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (22.59) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:15:43
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:15:48
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:15:54
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (23.58) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:15:59
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:16:05
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:16:10
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:16:15
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:16:21
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (25.47) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:16:26
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:16:32
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:16:37
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:16:43
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0003).
+[FINAL DECISION] HOLD at 2025-05-22 02:16:48
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:16:53
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:16:59
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0006).
+[FINAL DECISION] HOLD at 2025-05-22 02:17:04
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (15.94) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:17:10
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:17:15
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (13.64) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:17:21
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:17:26
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:17:32
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:17:37
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:17:43
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:17:48
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0006).
+[FINAL DECISION] HOLD at 2025-05-22 02:17:54
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (23.93) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:17:59
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:18:04
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:18:10
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:18:15
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (24.33) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:18:21
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (28.81) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:18:26
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:18:32
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:18:37
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:18:42
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0007).
+[FINAL DECISION] HOLD at 2025-05-22 02:18:48
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:18:53
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (34.05) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:18:59
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:19:04
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0008).
+[FINAL DECISION] HOLD at 2025-05-22 02:19:09
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:19:15
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (33.75) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:19:20
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0008).
+[FINAL DECISION] HOLD at 2025-05-22 02:19:26
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0008).
+[FINAL DECISION] HOLD at 2025-05-22 02:19:31
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (37.27) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:19:36
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:19:43
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0007).
+[FINAL DECISION] HOLD at 2025-05-22 02:19:48
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:19:53
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:19:59
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:20:04
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (41.74) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:20:09
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:20:15
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (35.14) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:20:21
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (35.73) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:20:26
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (34.73) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:20:32
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:20:37
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:20:42
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:20:48
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:20:53
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0009).
+[FINAL DECISION] HOLD at 2025-05-22 02:20:59
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:21:04
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:21:09
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0010).
+[FINAL DECISION] HOLD at 2025-05-22 02:21:15
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:21:20
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0010).
+[FINAL DECISION] HOLD at 2025-05-22 02:21:26
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (29.76) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:21:31
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:21:37
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:21:43
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:21:48
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:21:53
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (28.94) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:21:59
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (29.09) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:22:04
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:22:10
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:22:15
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:22:20
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (31.42) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:22:26
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:22:31
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:22:37
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0011).
+[FINAL DECISION] HOLD at 2025-05-22 02:22:42
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (31.70) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:22:48
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (32.66) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:22:53
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:22:59
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (32.95) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:23:04
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:23:09
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0011).
+[FINAL DECISION] HOLD at 2025-05-22 02:23:15
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:23:20
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (33.66) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:23:26
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0011).
+[FINAL DECISION] HOLD at 2025-05-22 02:23:31
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:23:36
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:23:42
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:23:47
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:23:53
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:23:58
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (39.25) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:24:04
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (41.76) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:24:09
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (44.89) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:24:14
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:24:20
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:24:25
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (47.35) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:24:31
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:24:36
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Risk profile 'MED' intercepted decision 'SELL' → revised to 'HOLD'. Reason: RSI (48.12) below acceptable threshold (50).
+[FINAL DECISION] HOLD at 2025-05-22 02:24:41
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:24:47
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0008).
+[FINAL DECISION] HOLD at 2025-05-22 02:24:52
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Decision 'SELL' passed with risk profile 'MED'. No action taken.
+[DECISION] Liquidity already acquired, updating decision to 'hold'
+[FINAL DECISION] HOLD at 2025-05-22 02:24:57
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: BUY
+[RISK FILTER] Risk profile 'MED' intercepted decision 'BUY' → revised to 'HOLD'. Reason: Negative trend slope detected (-0.0006).
+[FINAL DECISION] HOLD at 2025-05-22 02:25:03
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: HOLD
+[FINAL DECISION] HOLD at 2025-05-22 02:25:08
+====================================================================================================
+
+====================================================================================================
+[AGENT EVALUATION] Agent Based Analysis Result: SELL
+[RISK FILTER] Decision 'SELL' passed with risk profile 'MED'. No action taken.
+[DECISION] Liquidity already acquired, updating decision to 'hold'
+[FINAL DECISION] HOLD at 2025-05-22 02:25:14
+====================================================================================================
+

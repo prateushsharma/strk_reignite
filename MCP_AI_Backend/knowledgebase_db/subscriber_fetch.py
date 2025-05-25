@@ -1,0 +1,59 @@
+import redis
+import json
+
+def candle_generator(redis_host='localhost', redis_port=6379, channel='binance_data'):
+    """
+    Generator that perfectly matches your publisher's data format:
+    {
+        "timestamp": str,
+        "candlesticks": [
+            {
+                "timestamp": str,
+                "open": float,
+                "high": float,
+                "low": float,
+                "close": float,
+                "volume": float,
+                "close_time": str,
+                "quote_asset_volume": float,
+                "number_of_trades": int,
+                "taker_buy_base_asset_volume": float,
+                "taker_buy_quote_asset_volume": float
+            },
+            ...
+        ]
+    }
+    """
+    r = redis.Redis(host=redis_host, port=redis_port)
+    pubsub = r.pubsub()
+    pubsub.subscribe(channel)
+    
+    # Wait for subscription confirmation
+    while True:
+        msg = pubsub.get_message()
+        if msg and msg['type'] == 'subscribe':
+            print(f"✅ Successfully subscribed to {channel}")
+            break
+    
+    try:
+        while True:
+            message = pubsub.get_message(timeout=0.5)
+            
+            if message and message['type'] == 'message':
+                try:
+                    data = json.loads(message['data'])
+                    print(f"📩 Received batch at {data['timestamp']}")
+                    
+                    # Yield the data exactly as it comes from your publisher
+                    yield data
+                    
+                except json.JSONDecodeError:
+                    print("⚠️ Invalid JSON received")
+                except KeyError as e:
+                    print(f"⚠️ Missing expected field in data: {e}")
+                except Exception as e:
+                    print(f"⚠️ Error processing message: {e}")
+                    
+    finally:
+        pubsub.close()
+        print("🔴 Redis connection closed")

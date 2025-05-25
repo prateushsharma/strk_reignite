@@ -1,0 +1,54 @@
+{
+    "workflowId": "workflow-1747126085806",
+    "name": "addsfsdf",
+    "description": "Automated trading workflow for SUI tokens",
+    "nodes": [
+        {
+            "id": "startNode-1747126060884",
+            "type": "startNode",
+            "position": {
+                "x": 150,
+                "y": 315
+            },
+            "data": {}
+        },
+        {
+            "id": "agentNode-1747126062349",
+            "type": "agentNode",
+            "position": {
+                "x": 420,
+                "y": 270
+            },
+            "data": {}
+        },
+        {
+            "id": "strategyNode-1747126067114",
+            "type": "strategyNode",
+            "position": {
+                "x": 120,
+                "y": 450
+            },
+            "data": {
+                "strategyText": "Just keep hold dont buy or sell"
+            }
+        }
+    ],
+    "edges": [
+        {
+            "id": "reactflow__edge-startNode-1747126060884start-out-agentNode-1747126062349agent-in",
+            "source": "startNode-1747126060884",
+            "target": "agentNode-1747126062349",
+            "type": "smoothstep",
+            "sourceHandle": "start-out",
+            "targetHandle": "agent-in"
+        },
+        {
+            "id": "reactflow__edge-agentNode-1747126062349model-out-strategyNode-1747126067114strategy-in",
+            "source": "agentNode-1747126062349",
+            "target": "strategyNode-1747126067114",
+            "type": "smoothstep",
+            "sourceHandle": "model-out",
+            "targetHandle": "strategy-in"
+        }
+    ]
+}

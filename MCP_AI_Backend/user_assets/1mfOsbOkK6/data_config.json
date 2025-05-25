@@ -1,0 +1,74 @@
+{
+    "workflowId": "workflow-1747127895673",
+    "name": "dfsvfx",
+    "description": "Automated trading workflow for SUI tokens",
+    "nodes": [
+        {
+            "id": "startNode-1747127822551",
+            "type": "startNode",
+            "position": {
+                "x": -405,
+                "y": 240
+            },
+            "data": {}
+        },
+        {
+            "id": "agentNode-1747127825914",
+            "type": "agentNode",
+            "position": {
+                "x": 0,
+                "y": 270
+            },
+            "data": {
+                "name": "sssf",
+                "description": "do according to the given strategy"
+            }
+        },
+        {
+            "id": "strategyNode-1747127830820",
+            "type": "strategyNode",
+            "position": {
+                "x": -255,
+                "y": 480
+            },
+            "data": {
+                "strategyText": "Just hold ,dont but or sell pls"
+            }
+        },
+        {
+            "id": "notificationNode-1747127837601",
+            "type": "notificationNode",
+            "position": {
+                "x": 615,
+                "y": 300
+            },
+            "data": {}
+        }
+    ],
+    "edges": [
+        {
+            "id": "reactflow__edge-startNode-1747127822551start-out-agentNode-1747127825914agent-in",
+            "source": "startNode-1747127822551",
+            "target": "agentNode-1747127825914",
+            "type": "smoothstep",
+            "sourceHandle": "start-out",
+            "targetHandle": "agent-in"
+        },
+        {
+            "id": "reactflow__edge-agentNode-1747127825914model-out-strategyNode-1747127830820strategy-in",
+            "source": "agentNode-1747127825914",
+            "target": "strategyNode-1747127830820",
+            "type": "smoothstep",
+            "sourceHandle": "model-out",
+            "targetHandle": "strategy-in"
+        },
+        {
+            "id": "reactflow__edge-agentNode-1747127825914agent-out-notificationNode-1747127837601notification-in",
+            "source": "agentNode-1747127825914",
+            "target": "notificationNode-1747127837601",
+            "type": "smoothstep",
+            "sourceHandle": "agent-out",
+            "targetHandle": "notification-in"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+redis
+websockets
+docker
+python-dotenv
+groq
+watchfiles
+psutil
+numpy
+scipy

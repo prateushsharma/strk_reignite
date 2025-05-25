@@ -1,0 +1,11 @@
+## 7. Infrastructure & Architecture
+- **Data Pipeline**
+  - Real-time ingestion, preprocessing, and storage
+- **Strategy Engine**
+  - Modular, plug-and-play for new strategies
+- **Execution Engine**
+  - Asynchronous, fault-tolerant order handling
+- **Monitoring & Alerting**
+  - Real-time PnL, latency, errors
+- **Logging & Auditing**
+  - Full traceability of trades and decisions
