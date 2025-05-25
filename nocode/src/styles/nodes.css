@@ -1,1 +1,605 @@
- 
+/* src/styles/Nodes.css */
+.custom-node {
+    width: 220px;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .node-header {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: var(--bg-tertiary);
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .node-icon {
+    font-size: 16px;
+    margin-right: 8px;
+  }
+  
+  .node-title {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .node-content {
+    padding: 12px;
+  }
+  
+  .input-group {
+    margin-bottom: 8px;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 4px;
+    color: var(--text-secondary);
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-size: 12px;
+    color: var(--text-primary);
+    outline: none;
+  }
+  
+  .input-group input:focus,
+  .input-group textarea:focus {
+    border-color: var(--accent-primary);
+  }
+  
+  /* Node specific styles */
+  .start-node .node-icon {
+    color: var(--accent-primary);
+  }
+  
+  .payment-node .node-icon {
+    color: var(--success-color);
+  }
+  
+  .notification-node .node-icon {
+    color: var(--warning-color);
+  }
+  /* Add this to the end of src/styles/Nodes.css */
+.agent-node .node-icon {
+  color: var(--accent-secondary);
+}
+
+.child-nodes-section {
+  margin-top: 10px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 10px;
+}
+
+.child-nodes-header {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.child-nodes-placeholder {
+  background-color: var(--bg-primary);
+  border: 1px dashed var(--border-color);
+  border-radius: 4px;
+  padding: 8px;
+  text-align: center;
+  font-size: 11px;
+  color: var(--text-secondary);
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Add this to src/styles/Nodes.css */
+
+/* Agent Node Styles */
+.agent-node .node-icon {
+  color: var(--accent-secondary);
+}
+
+.child-nodes-section {
+  margin-top: 10px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 10px;
+}
+
+.child-nodes-header {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-child-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+}
+
+.add-child-btn:hover {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+.child-nodes-placeholder {
+  background-color: var(--bg-primary);
+  border: 1px dashed var(--border-color);
+  border-radius: 4px;
+  padding: 8px;
+  text-align: center;
+  font-size: 11px;
+  color: var(--text-secondary);
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.child-node-menu {
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.child-node-option {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.child-node-option:hover {
+  background-color: var(--bg-primary);
+}
+
+.child-node-option .node-icon {
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.child-node-option span {
+  font-size: 12px;
+}
+
+/* Child Node Styles */
+.child-node {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.child-node-header {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  background-color: var(--bg-tertiary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.child-node-header .node-icon {
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+.child-node-header .node-title {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.child-node-content {
+  padding: 8px;
+}
+
+.child-nodes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Child Node Type-Specific Styles */
+.model-child-node .node-icon {
+  color: var(--accent-primary);
+}
+
+.token-child-node .node-icon {
+  color: var(--success-color);
+}
+
+.strategy-child-node .node-icon {
+  color: var(--warning-color);
+}
+
+/* Select Input Styling */
+.select-input {
+  width: 100%;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 12px;
+  color: var(--text-primary);
+  outline: none;
+}
+
+.select-input:focus {
+  border-color: var(--accent-primary);
+}
+/* Add this to src/styles/Nodes.css for child nodes */
+.child-node {
+  border: 1px solid var(--border-color);
+  width: 180px;
+}
+
+.model-node .node-icon {
+  color: var(--accent-primary);
+}
+
+.token-node .node-icon {
+  color: var(--success-color);
+}
+
+.strategy-node .node-icon {
+  color: var(--warning-color);
+}
+
+.child-node-connection {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin: 4px 0;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+/* Add these styles to src/styles/Nodes.css */
+
+/* Agent Node Styles */
+.agent-node .node-icon {
+  color: var(--accent-secondary);
+}
+
+.child-connection-points {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
+  border-top: 1px solid var(--border-color);
+  margin-top: 8px;
+}
+
+.connection-point {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+}
+
+.connection-label {
+  font-size: 10px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.add-child-btn {
+  background: none;
+  border: none;
+  color: var(--accent-primary);
+  cursor: pointer;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--bg-tertiary);
+}
+
+.add-child-btn:hover {
+  background-color: var(--accent-primary);
+  color: var(--text-primary);
+}
+
+/* Child Node Styles */
+.child-node {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  width: 180px;
+}
+
+.model-node .node-icon {
+  color: var(--accent-primary);
+}
+
+.memory-node .node-icon {
+  color: var(--success-color);
+}
+
+.tool-node .node-icon {
+  color: var(--warning-color);
+}
+
+/* Select Input Styling */
+.select-input {
+  width: 100%;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 12px;
+  color: var(--text-primary);
+  outline: none;
+}
+
+.select-input:focus {
+  border-color: var(--accent-primary);
+}
+/* Add to src/styles/Nodes.css */
+
+/* Agent Node Container */
+.agent-node-container {
+  width: 500px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  color: #e0e0e0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Agent Node Header */
+.agent-node-header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  background-color: #252525;
+  border-bottom: 1px solid #333;
+}
+
+.agent-icon {
+  margin-right: 12px;
+}
+
+.agent-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* Agent Node Content */
+.agent-node-content {
+  padding: 16px;
+  border-bottom: 1px solid #333;
+}
+
+.agent-input-group {
+  margin-bottom: 16px;
+}
+
+.agent-input-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #aaaaaa;
+  text-align: center;
+}
+
+.agent-input, .agent-textarea {
+  width: 100%;
+  background-color: #121212;
+  border: 1px solid #444;
+  color: #e0e0e0;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.agent-input:focus, .agent-textarea:focus {
+  outline: none;
+  border-color: #8C9EFF;
+}
+
+.agent-textarea {
+  resize: none;
+}
+
+/* Child Nodes Section */
+.agent-child-nodes {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+}
+
+.child-node-connection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.connection-label {
+  font-size: 14px;
+  color: #aaaaaa;
+  margin-bottom: 8px;
+}
+
+/* Custom Handle Styles */
+.node-handle {
+  width: 12px !important;
+  height: 12px !important;
+  background-color: #8C9EFF !important;
+  border: 2px solid #1e1e1e !important;
+}
+
+.connection-handle {
+  bottom: -6px !important;
+  width: 12px !important;
+  height: 12px !important;
+  background-color: #8C9EFF !important;
+  border: 2px solid #1e1e1e !important;
+}
+/* Add to src/styles/Nodes.css */
+
+/* Agent Node Styles */
+.agent-node {
+  width: 500px;
+}
+
+.agent-node .node-icon {
+  color: var(--accent-secondary);
+}
+
+.connector-labels {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-color);
+}
+
+.connector-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+/* Child Node Styles */
+.model-node .node-icon {
+  color: var(--accent-primary);
+}
+
+.memory-node .node-icon {
+  color: var(--success-color);
+}
+
+.tool-node .node-icon {
+  color: var(--warning-color);
+}
+/* Add to src/styles/Nodes.css */
+
+/* Agent Node Style Updates */
+.agent-node {
+  width: 500px;
+  margin-bottom: 20px; /* Add space below for connections */
+}
+
+.connection-points {
+  height: 10px;
+  position: relative;
+}
+/* Add to src/styles/Nodes.css */
+.strategy-node .node-icon {
+  color: #FFD700; /* Gold color for strategy */
+}
+
+/* Add to src/styles/Sidebar.css */
+.node-strategy .node-icon {
+  color: #FFD700; /* Match the node color in the sidebar */
+}
+/* Add this to your existing Nodes.css file */
+
+.telegram-node {
+  background: linear-gradient(135deg, #0088cc, #229ed9);
+  border: 2px solid #0088cc;
+}
+
+.telegram-node .node-icon {
+  color: #ffffff;
+  font-size: 1.2em;
+}
+
+.telegram-node .node-title {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.telegram-node .node-content {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 6px;
+  margin-top: 8px;
+}
+
+.telegram-node input,
+.telegram-node select {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.telegram-node input[type="password"] {
+  font-family: monospace;
+}
+
+.telegram-node select {
+  background: white;
+  cursor: pointer;
+}
+/* Add this to your existing Nodes.css file */
+
+.telegram-node-circular {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0088cc, #229ed9);
+  border: 3px solid #0088cc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 136, 204, 0.3);
+  transition: all 0.3s ease;
+}
+
+.telegram-node-circular:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 136, 204, 0.4);
+}
+
+.telegram-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.telegram-icon {
+  color: white;
+  font-size: 24px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}

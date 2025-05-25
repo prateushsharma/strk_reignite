@@ -1,1 +1,70 @@
- 
+/* src/styles/Sidebar.css */
+.sidebar {
+    width: 240px;
+    background-color: var(--bg-secondary);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  
+  .sidebar-header {
+    padding: 16px;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--bg-tertiary);
+  }
+  
+  .sidebar-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+  
+  .sidebar-nodes {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .node {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    cursor: grab;
+    background-color: var(--bg-tertiary);
+    transition: all 0.2s ease;
+  }
+  
+  .node:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .node-icon {
+    font-size: 18px;
+    margin-right: 12px;
+  }
+  
+  .node-label {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .node-start .node-icon {
+    color: var(--accent-primary);
+  }
+  
+  .node-payment .node-icon {
+    color: var(--success-color);
+  }
+  
+  .node-notification .node-icon {
+    color: var(--warning-color);
+  }
+  /* Add this to the end of src/styles/Sidebar.css */
+.node-agent .node-icon {
+  color: var(--accent-secondary);
+}

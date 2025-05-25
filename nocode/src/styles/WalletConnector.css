@@ -1,1 +1,103 @@
- 
+/* src/styles/WalletConnector.css */
+.wallet-connector {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.connect-button-wrapper {
+  position: relative;
+}
+
+/* Customize the ConnectButton appearance to match our design */
+.connect-button-wrapper button {
+  background-color: rgba(94, 114, 228, 0.1) !important;
+  color: var(--accent-primary) !important;
+  border: 1px solid var(--accent-primary) !important;
+  border-radius: 4px !important;
+  padding: 6px 12px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+.connect-button-wrapper button:hover {
+  background-color: rgba(94, 114, 228, 0.2) !important;
+  transform: translateY(-1px) !important;
+}
+
+.wallet-info {
+  display: flex;
+  align-items: center;
+}
+
+.uid-display {
+  display: flex;
+  align-items: center;
+  background-color: rgba(45, 206, 137, 0.1);
+  color: var(--success-color);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(45, 206, 137, 0.3);
+}
+
+.uid-label {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.uid-value {
+  font-family: monospace;
+  letter-spacing: 0.5px;
+}
+
+.uid-loading {
+  display: flex;
+  align-items: center;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.uid-loading::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  border: 2px solid var(--accent-primary);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spinner 0.8s linear infinite;
+}
+
+.uid-error {
+  display: flex;
+  align-items: center;
+  background-color: rgba(245, 54, 92, 0.1);
+  color: var(--danger-color);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(245, 54, 92, 0.3);
+  cursor: help;
+}
+
+@keyframes spinner {
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .wallet-connector {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .connect-button-wrapper {
+    width: 100%;
+  }
+  
+  .connect-button-wrapper button {
+    width: 100%;
+  }
+}
