@@ -1,7 +1,7 @@
 // src/components/UIDDisplay.jsx
 import React from 'react';
 import { BsHash, BsShieldCheck } from 'react-icons/bs';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '../src/contexts/AuthContext';
 import '../styles/UIDDisplay.css';
 
 const UIDDisplay = () => {

@@ -15,7 +15,7 @@ import {
   BsInfoCircle
 } from 'react-icons/bs';
 import '../../styles/DeploymentMonitor.css';
-import { useAuth } from '../../contexts/AuthContext';
+import { useAuth } from '../../src/contexts/AuthContext';
 
 const DeploymentMonitor = ({ agent, onClose, onStop }) => {
   const [logs, setLogs] = useState([]);

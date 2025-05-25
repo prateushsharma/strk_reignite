@@ -24,9 +24,9 @@ import {
   BsExclamationTriangle
 } from 'react-icons/bs';
 import '../styles/FlowCanvas.css';
-import { useAgentStore } from '../store/agentStore';
-import { useAuth } from '../contexts/AuthContext';
-import { updateAgentConfiguration } from '../services/agentDeploymentService';
+import { useAgentStore } from '../src/store/agentStore';
+import { useAuth } from '../src/contexts/AuthContext';
+import { updateAgentConfiguration } from '../src/services/agentDeploymentService';
 
 const FlowCanvas = ({ onDeploy }) => {
   // Initial flow state

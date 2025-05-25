@@ -14,12 +14,12 @@ import {
 } from 'react-icons/bs';
 import '../styles/Dashboard.css';
 
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '../src/contexts/AuthContext';
 import AgentDetail from './dashboard/AgentDetail';
 import AgentLogs from './dashboard/AgentLogs';
 import AgentMetrics from './dashboard/AgentMetrics';
 import AgentSettings from './dashboard/AgentSettings';
-import { fetchPairStatus, fetchAgentLogs } from '../services/agentDeploymentService';
+import { fetchPairStatus, fetchAgentLogs } from '../src/services/agentDeploymentService';
 import AgentPerformanceModal from './modals/AgentPerformanceModal';
 
 const Dashboard = ({ onSwitchToBuilder }) => {

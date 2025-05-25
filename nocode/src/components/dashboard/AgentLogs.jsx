@@ -16,8 +16,8 @@ import {
   BsDashLg
 } from 'react-icons/bs';
 import '../../styles/AgentLogs.css';
-import { useAuth } from '../../contexts/AuthContext';
-import { fetchAgentLogs } from '../../services/agentDeploymentService';
+import { useAuth } from '../../src/contexts/AuthContext';
+import { fetchAgentLogs } from '../../src/services/agentDeploymentService';
 
 // Improved Decision Chart Component
 const DecisionChart = ({ decisions }) => {

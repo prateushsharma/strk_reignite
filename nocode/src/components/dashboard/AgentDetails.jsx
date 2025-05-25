@@ -18,8 +18,8 @@ import {
   deployAgent, 
   setInitialTrading, 
   stopAgent 
-} from '../../services/agentDeploymentService';
-import { useAuth } from '../../contexts/AuthContext';
+} from '../../src/services/agentDeploymentService';
+import { useAuth } from '../../src/contexts/AuthContext';
 import TradingModal from '../modals/TradingModal';
 
 const AgentDetail = ({ agent, onAgentStop, onAgentStart }) => {

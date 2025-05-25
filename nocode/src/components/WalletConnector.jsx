@@ -1,7 +1,7 @@
 // src/components/WalletConnector.jsx
 import React from 'react';
 import { ConnectButton, useCurrentAccount } from '@mysten/dapp-kit';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '../src/contexts/AuthContext';
 import '../styles/WalletConnector.css';
 
 const WalletConnector = () => {
