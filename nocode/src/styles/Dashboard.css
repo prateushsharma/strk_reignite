@@ -1,0 +1,648 @@
+/* src/styles/Dashboard.css */
+:root {
+    --primary-bg: #1a1a1a;
+    --secondary-bg: #252525;
+    --tertiary-bg: #333333;
+    --card-bg: #2a2a2a;
+    --text-primary: #f5f5f5;
+    --text-secondary: #a0a0a0;
+    --accent-primary: #5e72e4;
+    --accent-secondary: #8392f7;
+    --border-color: #3a3a3a;
+    --success-color: #2dce89;
+    --warning-color: #fb6340;
+    --danger-color: #f5365c;
+  }
+  
+  .dashboard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-bg);
+    color: var(--text-primary);
+  }
+  
+  .dashboard-header {
+    height: 60px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary-bg);
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .dashboard-header h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .back-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .back-btn:hover {
+    background-color: var(--tertiary-bg);
+  }
+  
+  .back-btn svg {
+    margin-right: 6px;
+  }
+  
+  .status-indicators {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .status-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  
+  .status-label {
+    color: var(--text-secondary);
+    margin-right: 6px;
+  }
+  
+  .status-value {
+    font-weight: 500;
+  }
+  
+  .status-value.online {
+    color: var(--success-color);
+    display: flex;
+    align-items: center;
+  }
+  
+  .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--success-color);
+    margin-right: 6px;
+    display: inline-block;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(45, 206, 137, 0.6);
+    }
+    70% {
+      box-shadow: 0 0 0 6px rgba(45, 206, 137, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(45, 206, 137, 0);
+    }
+  }
+  
+  .dashboard-navbar {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-bg);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0 20px;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    height: 100%;
+    cursor: pointer;
+    color: var(--text-secondary);
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+  }
+  
+  .nav-item svg {
+    margin-right: 8px;
+  }
+  
+  .nav-item:hover {
+    color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .nav-item.active {
+    color: var(--accent-primary);
+    border-bottom: 2px solid var(--accent-primary);
+  }
+  
+  .dashboard-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  /* Agents Dashboard */
+  .dashboard-agents-container {
+    display: flex;
+    height: calc(100vh - 130px);
+    gap: 20px;
+  }
+  
+  .agents-sidebar {
+    width: 280px;
+    background-color: var(--secondary-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .agents-sidebar-header {
+    padding: 15px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .agents-sidebar-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .new-agent-btn {
+    background-color: var(--accent-primary);
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+  }
+  
+  .new-agent-btn:hover {
+    background-color: var(--accent-secondary);
+  }
+  
+  .new-agent-btn svg {
+    margin-right: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .agents-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .agent-list-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .agent-list-item:hover {
+    background-color: var(--tertiary-bg);
+  }
+  
+  .agent-list-item.selected {
+    background-color: rgba(94, 114, 228, 0.1);
+    border: 1px solid var(--accent-primary);
+  }
+  
+  .agent-list-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    background-color: var(--tertiary-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    color: var(--accent-primary);
+  }
+  
+  .agent-list-details {
+    flex: 1;
+  }
+  
+  .agent-list-name {
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+  
+  .agent-list-status {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+  }
+  
+  .agent-list-status.running {
+    color: var(--success-color);
+    display: flex;
+    align-items: center;
+  }
+  
+  .agent-detail-container {
+    flex: 1;
+    background-color: var(--secondary-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .agent-detail-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .agent-header-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .agent-header-info h2 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  
+  .agent-header-status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  .agent-header-status.running {
+    background-color: rgba(45, 206, 137, 0.1);
+    color: var(--success-color);
+  }
+  
+  .agent-header-status.stopped {
+    background-color: rgba(251, 99, 64, 0.1);
+    color: var(--warning-color);
+  }
+  
+  .agent-detail-tabs {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .tab-btn {
+    padding: 8px 15px;
+    border: none;
+    background: transparent;
+    color: var(--text-secondary);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+  }
+  
+  .tab-btn svg {
+    margin-right: 6px;
+  }
+  
+  .tab-btn:hover {
+    color: var(--text-primary);
+  }
+  
+  .tab-btn.active {
+    color: var(--accent-primary);
+    border-bottom: 2px solid var(--accent-primary);
+  }
+  
+  .agent-detail-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  .no-agent-selected {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+  }
+  
+  .no-agent-selected .big-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    opacity: 0.5;
+  }
+  
+  .no-agent-selected h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+  }
+  
+  .no-agent-selected p {
+    margin: 0 0 20px;
+  }
+  
+  .create-agent-btn {
+    background-color: var(--accent-primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  
+  .create-agent-btn:hover {
+    background-color: var(--accent-secondary);
+  }
+  
+  /* Modal Styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .deployment-modal {
+    background-color: var(--secondary-bg);
+    border-radius: 8px;
+    width: 600px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .modal-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .close-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    line-height: 1;
+  }
+  
+  .close-btn:hover {
+    color: var(--text-primary);
+  }
+  
+  .deployment-progress {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .deployment-step {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .step-status-icon {
+    margin-right: 15px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .status-pending {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--text-secondary);
+  }
+  
+  .status-in-progress {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-primary);
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .deployment-step.complete .step-status-icon {
+    color: var(--success-color);
+  }
+  
+  .deployment-step.error .step-status-icon {
+    color: var(--danger-color);
+  }
+  
+  .step-content {
+    flex: 1;
+  }
+  
+  .step-message {
+    font-size: 0.95rem;
+  }
+  
+  .deployment-logs {
+    border-top: 1px solid var(--border-color);
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+  
+  .logs-header {
+    margin-bottom: 10px;
+  }
+  
+  .logs-header h3 {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+  }
+  
+  .logs-content {
+    flex: 1;
+    overflow-y: auto;
+    background-color: var(--primary-bg);
+    border-radius: 4px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 0.85rem;
+  }
+  
+  .log-entry {
+    margin-bottom: 5px;
+    line-height: 1.4;
+  }
+  
+  .log-time {
+    color: var(--text-secondary);
+    margin-right: 5px;
+  }
+  
+  .log-entry.complete .log-message {
+    color: var(--success-color);
+  }
+  
+  .log-entry.in-progress .log-message {
+    color: var(--accent-primary);
+  }
+  
+  .log-entry.error .log-message {
+    color: var(--danger-color);
+  }
+  
+  .modal-footer {
+    padding: 15px 20px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--tertiary-bg);
+  }
+  
+  .btn-primary {
+    background-color: var(--accent-primary);
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--accent-secondary);
+  }
+  
+  /* Loading spinner */
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    border-top-color: var(--accent-primary);
+    animation: spin 1s ease-in-out infinite;
+  }
+  /* src/styles/Dashboard.css
+   Add these styles to the existing file */
+
+.dashboard-single-agent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.dashboard-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+.no-agent-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  text-align: center;
+}
+
+.no-agent-found .big-icon {
+  font-size: 4rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.no-agent-found h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.no-agent-found p {
+  margin: 0 0 20px;
+  color: var(--text-secondary);
+}
+
+/* Remove the sidebar styles since we don't need them anymore */
+.dashboard-agents-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 0;
+}
+
+/* Update status indicators to show agent name */
+.status-indicators .status-value {
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,277 @@
+/* src/styles/AgentSettings.css */
+.agent-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .settings-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .settings-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .settings-header h3 svg {
+    margin-right: 8px;
+  }
+  
+  .settings-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+  }
+  
+  .settings-section {
+    background-color: var(--tertiary-bg);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .section-header {
+    padding: 15px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .section-header h4 {
+    margin: 0 0 5px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .section-header h4 svg {
+    margin-right: 8px;
+  }
+  
+  .section-header p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+  }
+  
+  .form-group {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .form-group:last-child {
+    border-bottom: none;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text-primary);
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .help-text {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+  }
+  
+  .form-group.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .wallet-info {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .wallet-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .wallet-detail:last-child {
+    margin-bottom: 0;
+  }
+  
+  .detail-label {
+    color: var(--text-secondary);
+    width: 120px;
+    flex-shrink: 0;
+  }
+  
+  .detail-value {
+    font-weight: 500;
+  }
+  
+  .settings-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .save-btn, .delete-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .save-btn {
+    background-color: var(--accent-primary);
+    color: white;
+    border: none;
+  }
+  
+  .save-btn:hover {
+    background-color: var(--accent-secondary);
+  }
+  
+  .delete-btn {
+    background-color: transparent;
+    color: var(--danger-color);
+    border: 1px solid var(--danger-color);
+  }
+  
+  .delete-btn:hover {
+    background-color: rgba(245, 54, 92, 0.1);
+  }
+  
+  .save-btn svg, .delete-btn svg {
+    margin-right: 8px;
+  }
+  
+  .save-btn:disabled {
+    background-color: var(--tertiary-bg);
+    color: var(--text-secondary);
+    cursor: not-allowed;
+  }
+  
+  /* Delete confirmation modal */
+  .confirm-delete-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: var(--secondary-bg);
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    overflow: hidden;
+  }
+  
+  .modal-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+  }
+  
+  .warning-icon {
+    font-size: 1.5rem;
+    color: var(--danger-color);
+    margin-right: 10px;
+  }
+  
+  .modal-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .modal-content p {
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .modal-actions {
+    padding: 15px 20px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .cancel-btn {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .cancel-btn:hover {
+    background-color: var(--tertiary-bg);
+  }
+  
+  .confirm-btn {
+    background-color: var(--danger-color);
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .confirm-btn:hover {
+    background-color: rgba(245, 54, 92, 0.8);
+  }
+  
+  @media (max-width: 768px) {
+    .settings-sections {
+      grid-template-columns: 1fr;
+    }
+  }
