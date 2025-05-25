@@ -1,6 +1,7 @@
 {
   "name": "nocode_backend",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -8,5 +9,21 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@cetusprotocol/cetus-sui-clmm-sdk": "^5.3.4",
+    "@mysten/deepbook-v3": "^0.14.7",
+    "@mysten/sui": "^1.30.0",
+    "@mysten/sui.js": "^0.54.1",
+    "axios": "^1.9.0",
+    "bech32": "^2.0.0",
+    "bn.js": "^5.2.2",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "graphql-request": "^7.1.2",
+    "node-fetch": "^3.3.2",
+    "tslib": "^2.8.1"
+  }
 }
