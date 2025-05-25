@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { BsXLg, BsArrowUp, BsArrowDown, BsDashLg } from 'react-icons/bs';
 import '../../styles/Modals.css';
-import { fetchPairStatus } from '../../src/services/agentDeploymentService';
-
+//import { fetchPairStatus } from '../../services/agentDeploymentService';
+import { fetchPairStatus } from '../../services/agentDeployementService';
 const AgentPerformanceModal = ({ isOpen, onClose, agentLogs = [], tradingData = {} }) => {
   const [balances, setBalances] = useState({ sui: 0, usdc: 0 });
   const [decisions, setDecisions] = useState([]);

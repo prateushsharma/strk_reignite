@@ -22,7 +22,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <h3>Sui Flow Nodes</h3>
+        <h3>STARKNET Flow Nodes</h3>
       </div>
       <div className="sidebar-nodes">
         <div 

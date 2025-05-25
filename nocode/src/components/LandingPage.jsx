@@ -212,7 +212,7 @@ const LandingPage = ({ onEnterApp }) => {
       { name: "Design", description: "Building workflow with drag-and-drop" },
       { name: "Compile", description: "Converting to executable code" },
       { name: "MCP Init", description: "Initializing Model Context Protocol" },
-      { name: "Deploy", description: "Deploying to SUI blockchain" },
+      { name: "Deploy", description: "Deploying to STARKNET blockchain" },
       { name: "Running", description: "Agent running with MCP integration" }
     ];
     
@@ -345,7 +345,7 @@ const LandingPage = ({ onEnterApp }) => {
                     <div className="package-rocket">🚀</div>
                   </div>
                   <div className="blockchain-representation">
-                    <div className="blockchain-header">SUI BLOCKCHAIN</div>
+                    <div className="blockchain-header">STARKNET BLOCKCHAIN</div>
                     <div className="blockchain-blocks">
                       <div className="block block-1"></div>
                       <div className="block block-2"></div>
@@ -361,7 +361,7 @@ const LandingPage = ({ onEnterApp }) => {
                   <div className="log-line">Creating agent wallet...</div>
                   <div className="log-line">Initializing MCP connection...</div>
                   <div className="log-line">Preparing deployment package...</div>
-                  <div className="log-line current">Deploying to SUI blockchain...</div>
+                  <div className="log-line current">Deploying to STARKNET blockchain...</div>
                 </div>
               </div>
             )}
@@ -393,8 +393,8 @@ const LandingPage = ({ onEnterApp }) => {
                       <div className="stat-item">
                         <div className="stat-icon"><BsWallet2 /></div>
                         <div className="stat-details">
-                          <div className="stat-label">SUI Balance</div>
-                          <div className="stat-value">12.5 SUI</div>
+                          <div className="stat-label">STARKNET Balance</div>
+                          <div className="stat-value">12.5 STRK</div>
                         </div>
                       </div>
                       <div className="stat-item">
@@ -426,7 +426,7 @@ const LandingPage = ({ onEnterApp }) => {
                     </div>
                     <div className="activity-item">
                       <div className="activity-time">1m ago</div>
-                      <div className="activity-content">SUI transaction confirmed</div>
+                      <div className="activity-content">STARKNET transaction confirmed</div>
                     </div>
                   </div>
                 </div>
@@ -517,10 +517,10 @@ const LandingPage = ({ onEnterApp }) => {
           <h1>DeZeroFAI</h1>
         </div>
         
-        <h2 className="tagline">Build and Deploy AI Agents on SUI Blockchain</h2>
+        <h2 className="tagline">Build and Deploy AI Agents on STARKNET Blockchain</h2>
         
         <p className="description">
-          Create, deploy, and manage autonomous AI agents with a visual no-code interface that leverages <span className="highlight">Model Context Protocol (MCP)</span> for secure and efficient execution on the SUI blockchain
+          Create, deploy, and manage autonomous AI agents with a visual no-code interface that leverages <span className="highlight">Model Context Protocol (MCP)</span> for secure and efficient execution on the STRAKNET blockchain
         </p>
         
         <div className="cta-buttons">
@@ -570,7 +570,7 @@ const LandingPage = ({ onEnterApp }) => {
           <div className="feature-icon yellow">
             <BsLightning />
           </div>
-          <h3>SUI Blockchain</h3>
+          <h3>STRAKNET Blockchain</h3>
           <p>Security and transparency with decentralized infrastructure</p>
         </div>
         
@@ -665,7 +665,7 @@ const LandingPage = ({ onEnterApp }) => {
       {/* Security badge */}
       <div className="security-badge">
         <BsShieldCheck />
-        <span>SUI & MCP Secure</span>
+        <span>STRAKNET & MCP Secure</span>
       </div>
       
       {/* Footer */}
@@ -676,7 +676,7 @@ const LandingPage = ({ onEnterApp }) => {
           <a href="#" onClick={(e) => e.preventDefault()}>Privacy</a>
           <a href="#" onClick={(e) => e.preventDefault()}>Documentation</a>
         </div>
-        <div className="powered-by">Powered by SUI Blockchain</div>
+        <div className="powered-by">Powered by STRAKNET Blockchain</div>
       </div>
     </div>
   );

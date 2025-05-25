@@ -24,9 +24,9 @@ import {
   BsExclamationTriangle
 } from 'react-icons/bs';
 import '../styles/FlowCanvas.css';
-import { useAgentStore } from '../src/store/agentStore';
-import { useAuth } from '../src/contexts/AuthContext';
-import { updateAgentConfiguration } from '../src/services/agentDeploymentService';
+import { useAgentStore } from '../store/agentStore';
+import { useAuth } from '../contexts/AuthContext';
+import { updateAgentConfiguration } from '../services/agentDeployementService';
 
 const FlowCanvas = ({ onDeploy }) => {
   // Initial flow state
@@ -250,8 +250,8 @@ const FlowCanvas = ({ onDeploy }) => {
     // Format the flow object
     const flowJson = {
       workflowId: "workflow-" + Date.now(),
-      name: flowName || "SUI Trading Agent Workflow",
-      description: "Automated trading workflow for SUI tokens",
+      name: flowName || "STRK Trading Agent Workflow",
+      description: "Automated trading workflow for STRK tokens",
       nodes: formattedNodes,
       edges: formattedEdges
     };

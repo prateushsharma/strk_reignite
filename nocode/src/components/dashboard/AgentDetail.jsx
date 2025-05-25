@@ -18,13 +18,13 @@ import {
   deployAgent, 
   setInitialTrading, 
   stopAgent 
-} from '../../src/services/agentDeploymentService';
-import { useAuth } from '../../src/contexts/AuthContext';
+} from '../../services/agentDeployementService';
+import { useAuth } from '../../contexts/AuthContext';
 import TradingModal from '../modals/TradingModal';
 
 const AgentDetail = ({ agent, onAgentStop, onAgentStart }) => {
   const [isUpdatingStatus, setIsUpdatingStatus] = useState(false);
-  const [balances, setBalances] = useState({ sui: 0, usdc: 0 }); // Changed from sol to sui
+  const [balances, setBalances] = useState({ strk: 0, usdc: 0 }); // Changed from sol to strk
   const [isLoading, setIsLoading] = useState(true);
   const [showTradingModal, setShowTradingModal] = useState(false);
   const [tradingParams, setTradingParams] = useState({
@@ -45,9 +45,9 @@ const AgentDetail = ({ agent, onAgentStop, onAgentStart }) => {
       try {
         const result = await fetchTradingBalances(walletAddress);
         if (result.status === 'success') {
-          // Convert from sol to sui in the balances
+          // Convert from sol to strk in the balances
           setBalances({
-            sui: result.balances.sui || result.balances.sol || 0,
+            strk: result.balances.strk || result.balances.sol || 0,
             usdc: result.balances.usdc || 0
           });
         } else {
@@ -57,7 +57,7 @@ const AgentDetail = ({ agent, onAgentStop, onAgentStart }) => {
         console.error('Error fetching balances:', error);
         setError('Failed to connect to the trading service');
         // Set default balances to prevent UI from breaking
-        setBalances({ sui: 0, usdc: 0 });
+        setBalances({ strk: 0, usdc: 0 });
       } finally {
         setIsLoading(false);
       }
@@ -170,8 +170,8 @@ const AgentDetail = ({ agent, onAgentStop, onAgentStart }) => {
           <div className="overview-item">
             <div className="item-icon"><BsCashCoin /></div>
             <div className="item-content">
-              <div className="item-label">SUI Balance</div>
-              <div className="item-value">{balances.sui} SUI</div>
+              <div className="item-label">STRK Balance</div>
+              <div className="item-value">{balances.strk} STRK</div>
             </div>
           </div>
           
@@ -217,7 +217,7 @@ const AgentDetail = ({ agent, onAgentStop, onAgentStart }) => {
             <div className="component-icon"><BsTools /></div>
             <div className="component-info">
               <div className="component-name">Tools</div>
-              <div className="component-details">SUI Trading API</div>
+              <div className="component-details">STRK Trading API</div>
             </div>
           </div>
         </div>

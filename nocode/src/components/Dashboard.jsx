@@ -14,25 +14,25 @@ import {
 } from 'react-icons/bs';
 import '../styles/Dashboard.css';
 
-import { useAuth } from '../src/contexts/AuthContext';
+import { useAuth } from '../contexts/AuthContext';
 import AgentDetail from './dashboard/AgentDetail';
 import AgentLogs from './dashboard/AgentLogs';
 import AgentMetrics from './dashboard/AgentMetrics';
 import AgentSettings from './dashboard/AgentSettings';
-import { fetchPairStatus, fetchAgentLogs } from '../src/services/agentDeploymentService';
+import { fetchAgentLogs, fetchPairStatus } from '../services/agentDeployementService';
 import AgentPerformanceModal from './modals/AgentPerformanceModal';
 
 const Dashboard = ({ onSwitchToBuilder }) => {
   const [selectedView, setSelectedView] = useState('detail'); // 'detail', 'logs', 'metrics', 'settings'
   const [agent, setAgent] = useState({
     id: 'agent-1',
-    name: 'SUI Trading Agent',
+    name: 'STRK Trading Agent',
     status: 'stopped',
     walletAddress: '',
     walletStatus: 'active'
   });
   const [showPerformanceModal, setShowPerformanceModal] = useState(false);
-  const [pairInfo, setPairInfo] = useState({ sui: 0, usdc: 0, currentPrice: 0 });
+  const [pairInfo, setPairInfo] = useState({ strk: 0, usdc: 0, currentPrice: 0 });
   const [agentLogs, setAgentLogs] = useState([]);
   const [loading, setLoading] = useState(true);
   
@@ -46,7 +46,7 @@ const Dashboard = ({ onSwitchToBuilder }) => {
         const result = await fetchPairStatus();
         if (result.status === 'success') {
           setPairInfo({
-            sui: result.data.sui || 0, // Changed from sol to sui
+            strk: result.data.strk || 0, 
             usdc: result.data.usdc || 0,
             currentPrice: result.data.currentPrice || 0
           });
@@ -120,12 +120,12 @@ const Dashboard = ({ onSwitchToBuilder }) => {
         <h1>DeFAI Agent Deployer</h1>
         <div className="status-indicators">
           <div className="status-item">
-            <span className="status-label">SUI/USDC:</span>
+            <span className="status-label">STRK/USDC:</span>
             <span className="status-value">${pairInfo.currentPrice.toFixed(3)}</span>
           </div>
           <div className="status-item">
-            <span className="status-label">SUI Balance:</span>
-            <span className="status-value">{pairInfo.sui} SUI</span>
+            <span className="status-label">STRK Balance:</span>
+            <span className="status-value">{pairInfotrk} STRK</span>
           </div>
           <div className="status-item">
             <span className="status-label">USDC Balance:</span>

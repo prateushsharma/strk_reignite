@@ -100,7 +100,7 @@ const AgentSettings = ({ agent }) => {
           </div>
           
           <div className="form-group">
-            <label htmlFor="max-trade">Maximum Trade Amount (SUI)</label>
+            <label htmlFor="max-trade">Maximum Trade Amount (STRK)</label>
             <input
               id="max-trade"
               type="number"
@@ -109,7 +109,7 @@ const AgentSettings = ({ agent }) => {
               value={maxTradeAmount}
               onChange={(e) => setMaxTradeAmount(e.target.value)}
             />
-            <p className="help-text">Maximum amount of SUI to trade in a single transaction.</p>
+            <p className="help-text">Maximum amount of STRK to trade in a single transaction.</p>
           </div>
           
           <div className="form-group">

@@ -37,12 +37,12 @@ export const useWalletHelper = () => {
     try {
       // This is a simplified example - in reality, you would create a more complex transaction
       const tx = {
-        kind: 'moveCall',
+        kind: 'cairoCall',
         data: {
-          packageObjectId: '0x2', // SUI system package
-          module: 'sui_coin',
+          packageObjectId: '0x2', 
+          module: 'sTRK_coin',
           function: 'transfer',
-          typeArguments: ['0x2::sui::SUI'],
+          typeArguments: ['0x2::strk::STRK'],
           arguments: [recipient, amount.toString()],
           gasBudget: 10000, // Adjust as needed
         },
@@ -63,7 +63,7 @@ export const useWalletHelper = () => {
     }
 
     try {
-      // This would typically use suiClient.getBalance() 
+      
       // For now, we'll simulate a response
       return '1.23'; // Would be the actual balance in a real implementation
     } catch (error) {
@@ -109,7 +109,7 @@ export const WalletInfo = () => {
         Address: {getFormattedAddress()}
       </div>
       <div className="wallet-balance-display">
-        Balance: {balance} SUI
+        Balance: {balance} STRK
       </div>
     </div>
   );

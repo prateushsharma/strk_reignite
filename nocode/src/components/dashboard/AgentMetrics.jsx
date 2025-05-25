@@ -102,7 +102,7 @@ const AgentMetrics = ({ agent }) => {
         timestamp: new Date(Date.now() - (dataPoints - i) * 14400000).toISOString(),
         amount: parseFloat(amount),
         type: isWin ? 'win' : 'loss',
-        pair: 'SUI/USDC'
+        pair: 'STRK/USDC'
       });
     }
     
