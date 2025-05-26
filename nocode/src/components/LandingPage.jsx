@@ -1,4 +1,4 @@
-// src/components/LandingPage.jsx
+// src/components/LandingPage.jsx - Updated for Starknet wallet integration
 import React, { useState, useEffect, useRef } from 'react';
 import { 
   BsRobot, 
@@ -15,12 +15,14 @@ import {
   BsShieldCheck,
   BsBraces
 } from 'react-icons/bs';
+import { useStarknet } from '../contexts/StarknetContext';
 import '../styles/LandingPage.css';
 
 const LandingPage = ({ onEnterApp }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [touchRipples, setTouchRipples] = useState([]);
   const nextRippleId = useRef(0);
+  const { isConnected, connectWallet, isConnecting } = useStarknet();
   
   const gridRef = useRef(null);
   const containerRef = useRef(null);
@@ -202,6 +204,15 @@ const LandingPage = ({ onEnterApp }) => {
     const x = (mousePosition.x - 0.5) * moveFactor;
     const y = (mousePosition.y - 0.5) * moveFactor;
     return `translate(${x}px, ${y}px)`;
+  };
+
+  // Handle wallet connection
+  const handleConnectWallet = async () => {
+    try {
+      await connectWallet();
+    } catch (error) {
+      console.error('Failed to connect wallet:', error);
+    }
   };
 
   // Video Animation Component
@@ -520,19 +531,42 @@ const LandingPage = ({ onEnterApp }) => {
         <h2 className="tagline">Build and Deploy AI Agents on STARKNET Blockchain</h2>
         
         <p className="description">
-          Create, deploy, and manage autonomous AI agents with a visual no-code interface that leverages <span className="highlight">Model Context Protocol (MCP)</span> for secure and efficient execution on the STRAKNET blockchain
+          Create, deploy, and manage autonomous AI agents with a visual no-code interface that leverages <span className="highlight">Model Context Protocol (MCP)</span> for secure and efficient execution on the STARKNET blockchain
         </p>
         
         <div className="cta-buttons">
-          {/* Simple Let's Go button that takes user to the main app */}
-          <button 
-            className="lets-go-btn primary-btn"
-            onClick={onEnterApp}
-          >
-            <BsLightning />
-            <span>Let's Go</span>
-            <BsArrowRight className="arrow-icon" />
-          </button>
+          {/* Conditional rendering based on wallet connection */}
+          {isConnected ? (
+            <button 
+              className="lets-go-btn primary-btn"
+              onClick={onEnterApp}
+            >
+              <BsLightning />
+              <span>Enter App</span>
+              <BsArrowRight className="arrow-icon" />
+            </button>
+          ) : (
+            <>
+              <button 
+                className="connect-wallet-btn primary-btn"
+                onClick={handleConnectWallet}
+                disabled={isConnecting}
+              >
+                <BsWallet2 />
+                <span>{isConnecting ? 'Connecting...' : 'Connect Starknet Wallet'}</span>
+                <BsArrowRight className="arrow-icon" />
+              </button>
+              
+              <button 
+                className="lets-go-btn secondary-btn"
+                onClick={onEnterApp}
+              >
+                <BsLightning />
+                <span>Try Without Wallet</span>
+                <BsArrowRight className="arrow-icon" />
+              </button>
+            </>
+          )}
         </div>
       </div>
       
@@ -570,7 +604,7 @@ const LandingPage = ({ onEnterApp }) => {
           <div className="feature-icon yellow">
             <BsLightning />
           </div>
-          <h3>STRAKNET Blockchain</h3>
+          <h3>STARKNET Blockchain</h3>
           <p>Security and transparency with decentralized infrastructure</p>
         </div>
         
@@ -665,7 +699,7 @@ const LandingPage = ({ onEnterApp }) => {
       {/* Security badge */}
       <div className="security-badge">
         <BsShieldCheck />
-        <span>STRAKNET & MCP Secure</span>
+        <span>STARKNET & MCP Secure</span>
       </div>
       
       {/* Footer */}
@@ -676,7 +710,7 @@ const LandingPage = ({ onEnterApp }) => {
           <a href="#" onClick={(e) => e.preventDefault()}>Privacy</a>
           <a href="#" onClick={(e) => e.preventDefault()}>Documentation</a>
         </div>
-        <div className="powered-by">Powered by STRAKNET Blockchain</div>
+        <div className="powered-by">Powered by STARKNET Blockchain</div>
       </div>
     </div>
   );

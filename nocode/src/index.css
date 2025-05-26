@@ -1,8 +1,9 @@
-/* src/index.css */
+/* src/index.css - Fixed import order */
+
+/* Import the App.css for global variables first */
+@import './styles/App.css';
+
 body {
   margin: 0;
   padding: 0;
 }
-
-/* Import the App.css for global variables */
-@import './styles/App.css';

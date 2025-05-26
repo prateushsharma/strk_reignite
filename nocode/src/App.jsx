@@ -1,4 +1,4 @@
-// src/App.jsx
+// src/App.jsx - Updated for Starknet wallet integration
 import React, { useState } from 'react';
 import FlowCanvas from './components/FlowCanvas';
 import Sidebar from './components/Sidebar';
@@ -29,7 +29,7 @@ function App() {
         <div className="app-header">
           <div className="app-title">DeFAI Agent Deployer ⚡</div>
           
-          {/* Custom wallet connection with UID display */}
+          {/* Starknet wallet connection with UID display */}
           <div className="wallet-connection">
             <WalletConnector />
           </div>

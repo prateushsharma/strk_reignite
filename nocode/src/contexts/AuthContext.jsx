@@ -1,6 +1,6 @@
-// src/contexts/AuthContext.jsx
+// src/contexts/AuthContext.jsx - Updated for Starknet wallet integration
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { useCurrentAccount } from '@mysten/dapp-kit';
+import { useStarknet } from './StarknetContext';
 import { generateUid, storeUid, getStoredUid, clearUid } from '../services/authService';
 
 // Create the context
@@ -8,7 +8,7 @@ const AuthContext = createContext(null);
 
 // Provider component
 export const AuthProvider = ({ children }) => {
-  const account = useCurrentAccount();
+  const { address, isConnected } = useStarknet();
   const [uid, setUid] = useState(getStoredUid());
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -16,19 +16,19 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     const fetchUid = async () => {
       // If wallet disconnects, clear the UID
-      if (!account) {
+      if (!isConnected || !address) {
         clearUid();
         setUid(null);
         return;
       }
       
       // Only fetch UID if wallet is connected and we don't have a UID yet
-      if (account && !uid) {
+      if (isConnected && address && !uid) {
         setIsLoading(true);
         setError(null);
         
         try {
-          const result = await generateUid(account.address);
+          const result = await generateUid(address);
           
           if (result.status === 'success' && result.uid) {
             setUid(result.uid);
@@ -46,17 +46,17 @@ export const AuthProvider = ({ children }) => {
     };
 
     fetchUid();
-  }, [account, uid]);
+  }, [isConnected, address, uid]);
   
   const value = {
     uid,
-    walletAddress: account?.address,
-    isAuthenticated: !!uid && !!account,
+    walletAddress: address,
+    isAuthenticated: !!uid && !!isConnected,
     isLoading,
     error,
     // Manually refresh UID if needed
     refreshUid: async () => {
-      if (account) {
+      if (address) {
         clearUid();
         setUid(null);
         // The useEffect will trigger and fetch a new UID

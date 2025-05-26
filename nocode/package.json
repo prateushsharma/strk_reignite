@@ -10,16 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@argent/get-starknet": "^6.4.7",
     "@mysten/dapp-kit": "^0.16.2",
     "@mysten/sui": "^1.29.1",
-    "@tanstack/react-query": "^5.75.7",
+    "@tanstack/react-query": "^5.77.1",
+    "get-starknet-core": "^4.0.0",
     "lucide-react": "^0.507.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.5.0",
     "reactflow": "^11.11.4",
+    "starknet": "^6.24.1",
     "styled-components": "^6.1.17",
-    "zustand": "^5.0.4"
+    "zustand": "^5.0.5"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",

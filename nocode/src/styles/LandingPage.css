@@ -2393,3 +2393,171 @@ body, html {
 .lets-go-btn:hover::before {
   left: 100%;
 }
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.connect-wallet-btn, .lets-go-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+  height: 56px;
+  border-radius: 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  min-width: 200px;
+}
+
+.connect-wallet-btn.primary-btn, .lets-go-btn.primary-btn {
+  background: linear-gradient(45deg, #5e72e4, #11cdef);
+  color: white;
+  box-shadow: 0 5px 15px rgba(94, 114, 228, 0.4);
+}
+
+.lets-go-btn.secondary-btn {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.connect-wallet-btn::before, .lets-go-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: all 0.75s ease;
+}
+
+.connect-wallet-btn:hover::before, .lets-go-btn:hover::before {
+  left: 100%;
+}
+
+.connect-wallet-btn:hover, .lets-go-btn:hover {
+  transform: translateY(-2px);
+}
+
+.connect-wallet-btn.primary-btn:hover, .lets-go-btn.primary-btn:hover {
+  box-shadow: 0 8px 25px rgba(94, 114, 228, 0.5);
+}
+
+.lets-go-btn.secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.connect-wallet-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.connect-wallet-btn:disabled:hover::before {
+  left: -100%;
+}
+
+.connect-wallet-btn svg, .lets-go-btn svg {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.arrow-icon {
+  margin-left: 10px;
+  margin-right: 0 !important;
+  transition: transform 0.3s ease;
+}
+
+.connect-wallet-btn:hover .arrow-icon, .lets-go-btn:hover .arrow-icon {
+  transform: translateX(5px);
+}
+
+/* Responsive adjustments for buttons */
+@media (max-width: 768px) {
+  .cta-buttons {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .connect-wallet-btn, .lets-go-btn {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+/* Additional Starknet specific styles */
+.starknet-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: rgba(94, 114, 228, 0.1);
+  border: 1px solid rgba(94, 114, 228, 0.3);
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: var(--accent-primary);
+  margin-top: 10px;
+}
+
+.starknet-badge svg {
+  font-size: 1rem;
+}
+
+/* Update the security badge for Starknet */
+.security-badge {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background: rgba(94, 114, 228, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  border: 1px solid rgba(94, 114, 228, 0.3);
+  color: #5e72e4;
+  font-size: 0.85rem;
+  font-weight: 600;
+  z-index: 100;
+}
+
+.security-badge svg {
+  margin-right: 8px;
+}
+
+/* Update stats section for Starknet */
+.stats-section .stat-item:last-child .stat-label {
+  color: rgba(94, 114, 228, 0.8);
+}
+
+/* Add loading animation for connecting state */
+@keyframes connecting {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+.connect-wallet-btn:disabled {
+  animation: connecting 1.5s infinite;
+}
