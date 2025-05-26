@@ -147,7 +147,7 @@ const AgentSettings = ({ agent }) => {
             {agent.walletStatus === 'active' && (
               <div className="wallet-detail">
                 <span className="detail-label">Balance:</span>
-                <span className="detail-value">{agent.balance} SUI</span>
+                <span className="detail-value">{agent.balance} STRK</span>
               </div>
             )}
           </div>

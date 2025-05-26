@@ -5,7 +5,7 @@ import '../../styles/Modals.css';
 //import { fetchPairStatus } from '../../services/agentDeploymentService';
 import { fetchPairStatus } from '../../services/agentDeployementService';
 const AgentPerformanceModal = ({ isOpen, onClose, agentLogs = [], tradingData = {} }) => {
-  const [balances, setBalances] = useState({ sui: 0, usdc: 0 });
+  const [balances, setBalances] = useState({ strk: 0, usdc: 0 });
   const [decisions, setDecisions] = useState([]);
   
   // Extract decisions from logs when logs change
@@ -50,7 +50,7 @@ const AgentPerformanceModal = ({ isOpen, onClose, agentLogs = [], tradingData = 
         const result = await fetchPairStatus();
         if (result.status === 'success') {
           setBalances({
-            sui: result.data.sui || result.data.sol || 0, // Handle both sui and legacy sol property
+            strk: result.data.strk || result.data.sol || 0, 
             usdc: result.data.usdc || 0
           });
         }
@@ -107,12 +107,12 @@ const AgentPerformanceModal = ({ isOpen, onClose, agentLogs = [], tradingData = 
     }
     
     // Get values with defaults if undefined
-    const suiBalance = balances.sui || 0;
+    const strkBalance = balances.strk || 0;
     const usdcBalance = balances.usdc || 0;
     const currentPrice = tradingData.currentPrice || 0;
     
     // Calculate and format the value
-    const value = (suiBalance * currentPrice) + usdcBalance;
+    const value = (strkBalance * currentPrice) + usdcBalance;
     return value.toFixed(2);
   };
 
@@ -224,8 +224,8 @@ const AgentPerformanceModal = ({ isOpen, onClose, agentLogs = [], tradingData = 
           </div>
           
           <div className="performance-stat-box">
-            <div className="stat-label">SUI Balance</div>
-            <div className="stat-value">{balances.sui} SUI</div>
+            <div className="stat-label">STRK Balance</div>
+            <div className="stat-value">{balances.strk} STRK</div>
           </div>
           
           <div className="performance-stat-box">

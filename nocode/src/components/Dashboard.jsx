@@ -125,7 +125,7 @@ const Dashboard = ({ onSwitchToBuilder }) => {
           </div>
           <div className="status-item">
             <span className="status-label">STRK Balance:</span>
-            <span className="status-value">{pairInfotrk} STRK</span>
+            <span className="status-value">{pairInfo.strk} STRK</span>
           </div>
           <div className="status-item">
             <span className="status-label">USDC Balance:</span>

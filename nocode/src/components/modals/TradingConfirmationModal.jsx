@@ -19,10 +19,10 @@ const TradeConfirmationModal = ({
   // Default values for tradeAction, balances, and currentPrice to prevent errors
   const action = tradeAction || 'buy';
   const isBuy = action === 'buy';
-  const safeBalances = balances || { usdc: 0, sui: 0 }; // Changed from sol to sui
+  const safeBalances = balances || { usdc: 0, strk: 0 }; 
   const safePrice = currentPrice || { price: 0, buyPrice: 0, sellPrice: 0 };
   
-  const availableAmount = isBuy ? safeBalances.usdc : safeBalances.sui; // Changed from sol to sui
+  const availableAmount = isBuy ? safeBalances.usdc : safeBalances.strk;
   
   // Calculate estimated receive value safely
   const calculateEstimatedReceive = () => {
@@ -32,8 +32,7 @@ const TradeConfirmationModal = ({
       return (safeBalances.usdc / price).toFixed(4);
     } else {
       const price = safePrice.sellPrice || safePrice.price || 1;
-      return (safeBalances.sui * price).toFixed(2); // Changed from sol to sui
-    }
+      return (safeBalances.strk * price).toFixed(2); 
   };
   
   const estimatedReceive = calculateEstimatedReceive();
@@ -68,9 +67,9 @@ const TradeConfirmationModal = ({
         <div className="modal-header">
           <h3>
             {isBuy ? (
-              <><BsArrowUpRight className="buy-icon" /> Buy SUI</>
+              <><BsArrowUpRight className="buy-icon" /> Buy STRK</>
             ) : (
-              <><BsArrowDownRight className="sell-icon" /> Sell SUI</>
+              <><BsArrowDownRight className="sell-icon" /> Sell STRK</>
             )}
           </h3>
           <button 
@@ -98,14 +97,14 @@ const TradeConfirmationModal = ({
             <div className="detail-row">
               <span className="detail-label">You will {isBuy ? 'spend' : 'sell'}</span>
               <span className="detail-value">
-                {availableAmount} {isBuy ? 'USDC' : 'SUI'}
+                {availableAmount} {isBuy ? 'USDC' : 'STRK'}
               </span>
             </div>
             
             <div className="detail-row">
               <span className="detail-label">Estimated {isBuy ? 'receive' : 'receive'}</span>
               <span className="detail-value">
-                {estimatedReceive} {isBuy ? 'SUI' : 'USDC'}
+                {estimatedReceive} {isBuy ? 'STRK' : 'USDC'}
               </span>
             </div>
             
@@ -123,8 +122,8 @@ const TradeConfirmationModal = ({
           <div className="trade-warning">
             <p>
               {isBuy 
-                ? 'You will spend all your available USDC to buy SUI at the current market price.' 
-                : 'You will sell all your available SUI at the current market price.'}
+                ? 'You will spend all your available USDC to buy STRK at the current market price.' 
+                : 'You will sell all your available STRK at the current market price.'}
             </p>
             <p>
               <strong>Note:</strong> This is a simulated trade and does not use actual funds.
@@ -159,5 +158,5 @@ const TradeConfirmationModal = ({
     </div>
   );
 };
-
+}
 export default TradeConfirmationModal;

@@ -1,0 +1,57 @@
+{
+    "workflowId": "workflow-1748208355436",
+    "name": "dfdf",
+    "description": "Automated trading workflow for STRK tokens",
+    "nodes": [
+        {
+            "id": "startNode-1748208328043",
+            "type": "startNode",
+            "position": {
+                "x": 15,
+                "y": 150
+            },
+            "data": {}
+        },
+        {
+            "id": "agentNode-1748208330205",
+            "type": "agentNode",
+            "position": {
+                "x": 285,
+                "y": 90
+            },
+            "data": {
+                "name": "dsds",
+                "description": "do as mentioned in the strategy"
+            }
+        },
+        {
+            "id": "strategyNode-1748208333726",
+            "type": "strategyNode",
+            "position": {
+                "x": 165,
+                "y": 315
+            },
+            "data": {
+                "strategyText": "do random buy,sell hold"
+            }
+        }
+    ],
+    "edges": [
+        {
+            "id": "reactflow__edge-startNode-1748208328043start-out-agentNode-1748208330205agent-in",
+            "source": "startNode-1748208328043",
+            "target": "agentNode-1748208330205",
+            "type": "smoothstep",
+            "sourceHandle": "start-out",
+            "targetHandle": "agent-in"
+        },
+        {
+            "id": "reactflow__edge-agentNode-1748208330205model-out-strategyNode-1748208333726strategy-in",
+            "source": "agentNode-1748208330205",
+            "target": "strategyNode-1748208333726",
+            "type": "smoothstep",
+            "sourceHandle": "model-out",
+            "targetHandle": "strategy-in"
+        }
+    ]
+}

@@ -123,7 +123,7 @@ else:
 
 
 def generate_code_response(json_data) -> Dict[str, Any]:
-    client = Groq(api_key="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")
+    client = Groq(api_key="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")
     prompt = get_prompt(json_data)
     chat_completion = client.chat.completions.create(
         model="deepseek-r1-distill-llama-70b",

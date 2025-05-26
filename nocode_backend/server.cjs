@@ -1,4 +1,4 @@
-// server.js - Updated with Telegram integration
+// server.js - Updated with Telegram integration (STRK/USDC)
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -22,12 +22,12 @@ app.use(bodyParser.json());
 
 // Store balances in memory (in a real app this would be in a database)
 let balances = {
-  sui: 0,
+  strk: 0,
   usdc: 0
 };
 
-// SUI/USDC price management
-let currentPrice = 0.95; // Initial price: 1 SUI = 0.95 USDC
+// STRK/USDC price management
+let currentPrice = 0.45; // Initial price: 1 STRK = 0.45 USDC
 let lastPriceUpdate = Date.now();
 let isUpdatingPrice = false;
 
@@ -39,7 +39,7 @@ let telegramCommandListener = null;
 // ----- PRICE SERVICE -----
 
 /**
- * Fetch real SUI/USDC price from cryptocurrency exchanges
+ * Fetch real STRK/USDC price from cryptocurrency exchanges
  * Tries multiple sources for redundancy: CoinGecko, Binance, and Coinbase
  */
 async function updateRealPrice() {
@@ -47,21 +47,21 @@ async function updateRealPrice() {
   isUpdatingPrice = true;
   
   try {
-    console.log("Fetching SUI/USDC price from external APIs...");
+    console.log("Fetching STRK/USDC price from external APIs...");
     
     // Try CoinGecko first
     try {
       const response = await axios.get('https://api.coingecko.com/api/v3/simple/price', {
         params: {
-          ids: 'sui',
+          ids: 'starknet',
           vs_currencies: 'usd'
         }
       });
       
-      if (response.data?.sui?.usd) {
-        currentPrice = response.data.sui.usd;
+      if (response.data?.starknet?.usd) {
+        currentPrice = response.data.starknet.usd;
         lastPriceUpdate = Date.now();
-        console.log(`Updated SUI/USDC price from CoinGecko: $${currentPrice.toFixed(4)}`);
+        console.log(`Updated STRK/USDC price from CoinGecko: $${currentPrice.toFixed(4)}`);
         isUpdatingPrice = false;
         return;
       }
@@ -72,13 +72,13 @@ async function updateRealPrice() {
     // Try Binance as fallback
     try {
       const binanceResponse = await axios.get('https://api.binance.com/api/v3/ticker/price', {
-        params: { symbol: 'SUIUSDT' }
+        params: { symbol: 'STRKUSDT' }
       });
       
       if (binanceResponse.data?.price) {
         currentPrice = parseFloat(binanceResponse.data.price);
         lastPriceUpdate = Date.now();
-        console.log(`Updated SUI/USDC price from Binance: $${currentPrice.toFixed(4)}`);
+        console.log(`Updated STRK/USDC price from Binance: $${currentPrice.toFixed(4)}`);
         isUpdatingPrice = false;
         return;
       }
@@ -88,12 +88,12 @@ async function updateRealPrice() {
     
     // Try Coinbase as fallback
     try {
-      const coinbaseResponse = await axios.get('https://api.coinbase.com/v2/prices/SUI-USD/spot');
+      const coinbaseResponse = await axios.get('https://api.coinbase.com/v2/prices/STRK-USD/spot');
       
       if (coinbaseResponse.data?.data?.amount) {
         currentPrice = parseFloat(coinbaseResponse.data.data.amount);
         lastPriceUpdate = Date.now();
-        console.log(`Updated SUI/USDC price from Coinbase: $${currentPrice.toFixed(4)}`);
+        console.log(`Updated STRK/USDC price from Coinbase: $${currentPrice.toFixed(4)}`);
         isUpdatingPrice = false;
         return;
       }
@@ -175,7 +175,7 @@ app.post('/api/telegram/test', async (req, res) => {
 app.get('/', (req, res) => {
   res.json({
     status: 'ok',
-    message: 'SUI Trading API is running',
+    message: 'STRK Trading API is running',
     balances: balances,
     currentPrice: currentPrice,
     lastPriceUpdate: new Date(lastPriceUpdate).toISOString(),
@@ -207,13 +207,13 @@ app.post('/api/wallet/generate', (req, res) => {
 // Set initial balances (called when agent starts)
 app.post('/set_swap', (req, res) => {
   try {
-    const { sui, usdc, address } = req.body;
+    const { strk, usdc, address } = req.body;
     
     // Update balances
-    if (sui !== undefined) balances.sui = parseFloat(sui);
+    if (strk !== undefined) balances.strk = parseFloat(strk);
     if (usdc !== undefined) balances.usdc = parseFloat(usdc);
     
-    console.log(`Set initial balances: SUI=${balances.sui}, USDC=${balances.usdc}`);
+    console.log(`Set initial balances: STRK=${balances.strk}, USDC=${balances.usdc}`);
     
     res.json({
       success: true,
@@ -260,7 +260,7 @@ app.post('/api/wallet/fetch_pair', (req, res) => {
     
     res.json({
       success: true,
-      sui: balances.sui,
+      strk: balances.strk,
       usdc: balances.usdc,
       currentPrice: currentPrice
     });
@@ -295,7 +295,7 @@ app.post('/api/wallet/balance', async (req, res) => {
       res.json({
         success: true,
         balance: {
-          sui: balances.sui,
+          strk: balances.strk,
           usdc: balances.usdc
         }
       });
@@ -328,10 +328,10 @@ app.post('/swap', (req, res) => {
     const to = toCoin.toUpperCase();
     
     // Validate coin types
-    if ((from !== 'SUI' && from !== 'USDC') || (to !== 'SUI' && to !== 'USDC')) {
+    if ((from !== 'STRK' && from !== 'USDC') || (to !== 'STRK' && to !== 'USDC')) {
       return res.status(400).json({
         success: false,
-        error: "Invalid coins. Only SUI and USDC are supported."
+        error: "Invalid coins. Only STRK and USDC are supported."
       });
     }
     
@@ -346,24 +346,24 @@ app.post('/swap', (req, res) => {
     let amountToSwap;
     let receivedAmount;
     
-    // Handle SUI to USDC
-    if (from === 'SUI') {
-      // If no amount specified, use all SUI
-      amountToSwap = amount ? parseFloat(amount) : balances.sui;
+    // Handle STRK to USDC
+    if (from === 'STRK') {
+      // If no amount specified, use all STRK
+      amountToSwap = amount ? parseFloat(amount) : balances.strk;
       
       // Ensure we have enough balance
-      if (amountToSwap > balances.sui) {
+      if (amountToSwap > balances.strk) {
         return res.status(400).json({
           success: false,
-          error: "Insufficient SUI balance"
+          error: "Insufficient STRK balance"
         });
       }
       
-      // Calculate USDC to receive (SUI * price)
+      // Calculate USDC to receive (STRK * price)
       receivedAmount = amountToSwap * currentPrice;
       
       // Update balances
-      balances.sui -= amountToSwap;
+      balances.strk -= amountToSwap;
       balances.usdc += receivedAmount;
       
       // Log the decision and send Telegram notification
@@ -377,7 +377,7 @@ app.post('/swap', (req, res) => {
         balances: balances
       });
     } 
-    // Handle USDC to SUI
+    // Handle USDC to STRK
     else if (from === 'USDC') {
       // If no amount specified, use all USDC
       amountToSwap = amount ? parseFloat(amount) : balances.usdc;
@@ -390,12 +390,12 @@ app.post('/swap', (req, res) => {
         });
       }
       
-      // Calculate SUI to receive (USDC / price)
+      // Calculate STRK to receive (USDC / price)
       receivedAmount = amountToSwap / currentPrice;
       
       // Update balances
       balances.usdc -= amountToSwap;
-      balances.sui += receivedAmount;
+      balances.strk += receivedAmount;
       
       // Log the decision and send Telegram notification
       const logMessage = `[FINAL DECISION] BUY at ${new Date().toISOString()}`;
@@ -410,7 +410,7 @@ app.post('/swap', (req, res) => {
     }
     
     console.log(`Swap: ${amountToSwap} ${from} -> ${receivedAmount.toFixed(6)} ${to}`);
-    console.log(`New balances: SUI=${balances.sui.toFixed(6)}, USDC=${balances.usdc.toFixed(6)}`);
+    console.log(`New balances: STRK=${balances.strk.toFixed(6)}, USDC=${balances.usdc.toFixed(6)}`);
     
     // Generate a mock transaction hash
     const txHash = '0x' + crypto.randomBytes(32).toString('hex');
@@ -638,32 +638,32 @@ function executeAction(action) {
     
     // Calculate the action
     if (action === 'BUY') {
-      // Buy SUI with 25-75% of available USDC
+      // Buy STRK with 25-75% of available USDC
       const percentToUse = 0.25 + (Math.random() * 0.5);
       amountToSwap = balances.usdc * percentToUse;
       
-      // Calculate SUI to receive (USDC / price)
+      // Calculate STRK to receive (USDC / price)
       receivedAmount = amountToSwap / currentPrice;
       
       // Update balances
       balances.usdc -= amountToSwap;
-      balances.sui += receivedAmount;
+      balances.strk += receivedAmount;
     } else if (action === 'SELL') {
-      // Sell 25-75% of available SUI
+      // Sell 25-75% of available STRK
       const percentToUse = 0.25 + (Math.random() * 0.5);
-      amountToSwap = balances.sui * percentToUse;
+      amountToSwap = balances.strk * percentToUse;
       
-      // Calculate USDC to receive (SUI * price)
+      // Calculate USDC to receive (STRK * price)
       receivedAmount = amountToSwap * currentPrice;
       
       // Update balances
-      balances.sui -= amountToSwap;
+      balances.strk -= amountToSwap;
       balances.usdc += receivedAmount;
     }
     
     // Log the execution
     console.log(`Executed ${action}: ${amountToSwap.toFixed(6)} -> ${receivedAmount.toFixed(6)}`);
-    console.log(`New balances: SUI=${balances.sui.toFixed(6)}, USDC=${balances.usdc.toFixed(6)}`);
+    console.log(`New balances: STRK=${balances.strk.toFixed(6)}, USDC=${balances.usdc.toFixed(6)}`);
     
     // Send Telegram notification with trading details
     telegramService.sendTradingNotification(action, {
@@ -691,9 +691,9 @@ setInterval(updateRealPrice, 300000);
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(`SUI Trading API Server running on port ${PORT}`);
-  console.log(`Initial balances: SUI=${balances.sui}, USDC=${balances.usdc}`);
-  console.log(`Initial price: 1 SUI = ${currentPrice} USDC`);
+  console.log(`STRK Trading API Server running on port ${PORT}`);
+  console.log(`Initial balances: STRK=${balances.strk}, USDC=${balances.usdc}`);
+  console.log(`Initial price: 1 STRK = ${currentPrice} USDC`);
   
   // Initialize Telegram with a startup message
   telegramService.sendMessage(`
@@ -707,6 +707,6 @@ The trading agent server is now online and ready to receive commands.
 /balance - Show current balances
 /help - Show this message
 
-Current SUI price: ${currentPrice.toFixed(4)}
+Current STRK price: ${currentPrice.toFixed(4)}
   `);
 });

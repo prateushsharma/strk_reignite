@@ -1,0 +1,91 @@
+{
+    "workflowId": "workflow-1748208654435",
+    "name": "sds",
+    "description": "Automated trading workflow for STRK tokens",
+    "nodes": [
+        {
+            "id": "startNode-1748208614256",
+            "type": "startNode",
+            "position": {
+                "x": 45,
+                "y": 135
+            },
+            "data": {}
+        },
+        {
+            "id": "agentNode-1748208616434",
+            "type": "agentNode",
+            "position": {
+                "x": 360,
+                "y": 60
+            },
+            "data": {
+                "name": "ssd",
+                "description": "do as mentioned in the strategy"
+            }
+        },
+        {
+            "id": "strategyNode-1748208630011",
+            "type": "strategyNode",
+            "position": {
+                "x": 180,
+                "y": 360
+            },
+            "data": {
+                "strategyText": "do random buy,sell hold"
+            }
+        },
+        {
+            "id": "notificationNode-1748208642493",
+            "type": "notificationNode",
+            "position": {
+                "x": 915,
+                "y": 60
+            },
+            "data": {}
+        },
+        {
+            "id": "telegramNode-1748208646324",
+            "type": "telegramNode",
+            "position": {
+                "x": 1230,
+                "y": 90
+            },
+            "data": {}
+        }
+    ],
+    "edges": [
+        {
+            "id": "reactflow__edge-startNode-1748208614256start-out-agentNode-1748208616434agent-in",
+            "source": "startNode-1748208614256",
+            "target": "agentNode-1748208616434",
+            "type": "smoothstep",
+            "sourceHandle": "start-out",
+            "targetHandle": "agent-in"
+        },
+        {
+            "id": "reactflow__edge-agentNode-1748208616434model-out-strategyNode-1748208630011strategy-in",
+            "source": "agentNode-1748208616434",
+            "target": "strategyNode-1748208630011",
+            "type": "smoothstep",
+            "sourceHandle": "model-out",
+            "targetHandle": "strategy-in"
+        },
+        {
+            "id": "reactflow__edge-agentNode-1748208616434agent-out-notificationNode-1748208642493notification-in",
+            "source": "agentNode-1748208616434",
+            "target": "notificationNode-1748208642493",
+            "type": "smoothstep",
+            "sourceHandle": "agent-out",
+            "targetHandle": "notification-in"
+        },
+        {
+            "id": "reactflow__edge-notificationNode-1748208642493notification-out-telegramNode-1748208646324telegram-in",
+            "source": "notificationNode-1748208642493",
+            "target": "telegramNode-1748208646324",
+            "type": "smoothstep",
+            "sourceHandle": "notification-out",
+            "targetHandle": "telegram-in"
+        }
+    ]
+}
