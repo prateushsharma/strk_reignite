@@ -238,7 +238,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 [GitHub](https://github.com/PrateushSharma)  
 
 **Project Repository**:  
-[https://github.com/RudrakshSJoshi/Sol_Hack](https://github.com/RudrakshSJoshi/Sol_Hack)  
+[https://github.com/RudrakshSJoshi/Sol_Hack](https://github.com/RudrakshSJoshi/strk_reignite)  
 
 ---
 
